@@ -1,0 +1,144 @@
+% 
+% % some details about the thesis
+% \title{}
+% \advisor{Advisor's name}
+% 
+% % about the degree
+% \degree{Doctor of Philosophy}
+% \field{Subject}
+% \degreeyear{2013}
+% \degreemonth{April}
+% 
+% % about the university
+% \department{Department}
+% \university{Universidad Autónoma}
+% \universitycity{Madrid}
+% \universitystate{}
+
+\author{\myauthor}
+\def\today{\ifcase\month\or
+  January\or February\or March\or April\or May\or June\or
+  July\or August\or September\or October\or November\or December\fi
+  \space \number\year}
+
+\newcommand\bhrule{\typeout{------------------------------------------------------------------------------}}
+\newcommand\btypeout[1]{\bhrule\typeout{\space #1}\bhrule}
+
+\newcommand*{\supervisor}[1]{\def\supname{#1}}
+\newcommand*{\examiner}[1]{\def\examname{#1}}
+\newcommand*{\degree}[1]{\def\degreename{#1}}
+\newcommand*{\authors}[1]{\def\authornames{#1}}
+\newcommand*{\addresses}[1]{\def\addressnames{#1}}
+\newcommand*{\university}[1]{\def\univname{#1}}
+\newcommand*{\UNIVERSITY}[1]{\def\UNIVNAME{#1}}
+\newcommand*{\department}[1]{\def\deptname{#1}}
+\newcommand*{\DEPARTMENT}[1]{\def\DEPTNAME{#1}}
+\newcommand*{\group}[1]{\def\groupname{#1}}
+\newcommand*{\GROUP}[1]{\def\GROUPNAME{#1}}
+\newcommand*{\faculty}[1]{\def\facname{#1}}
+\newcommand*{\FACULTY}[1]{\def\FACNAME{#1}}
+\newcommand*{\subject}[1]{\def\subjectname{#1}}
+\newcommand*{\keywords}[1]{\def\keywordnames{#1}}
+\supervisor  {}
+\examiner    {}
+\degree      {}
+\authors     {}
+\university  {\texorpdfstring{\href{University Web Site URL Here (include http://)}
+                {University Name}}
+                {University Name}}
+\UNIVERSITY  {\texorpdfstring{\href{University Web Site URL Here (include http://)}
+                {UNIVERSITY NAME (IN BLOCK CAPITALS)}}
+                {UNIVERSITY NAME (IN BLOCK CAPITALS)}}
+\department  {\texorpdfstring{\href{Department or School Web Site URL Here (include http://)}
+                {Department or School Name}}
+                {Department or School Name}}
+\DEPARTMENT  {\texorpdfstring{\href{Department or School Web Site URL Here (include http://)}
+                {DEPARTMENT OR SCHOOL NAME (IN BLOCK CAPITALS)}}
+                {DEPARTMENT OR SCHOOL NAME (IN BLOCK CAPITALS)}}
+\group       {\texorpdfstring{\href{Research Group Web Site URL Here (include http://)}
+                {Research Group Name}}
+                {Research Group Name}}
+\GROUP       {\texorpdfstring{\href{Research Group Web Site URL Here (include http://)}
+                {RESEARCH GROUP NAME (IN BLOCK CAPITALS)}}
+                {RESEARCH GROUP NAME (IN BLOCK CAPITALS)}}
+\faculty     {\texorpdfstring{\href{Faculty Web Site URL Here (include http://)}
+                {Faculty Name}}
+                {Faculty Name}}
+\FACULTY     {\texorpdfstring{\href{Faculty Web Site URL Here (include http://)}
+                {FACULTY NAME (IN BLOCK CAPITALS)}}
+                {FACULTY NAME (IN BLOCK CAPITALS)}}
+\addresses   {}
+\subject     {}
+\keywords    {}
+
+
+
+\title  {\mytitle}
+\authors  {\texorpdfstring
+            {\href{your web site or email address}{\myauthor}}
+            {\myauthor}
+            }
+\addresses  {\groupname\\\deptname\\\univname}  % Do not change this here, instead these must be set in the "Thesis.cls" file, please look through it instead
+\date       {\today}
+\subject    {}
+\keywords   {\mykeywords}
+
+
+
+\renewcommand\maketitle{
+  \btypeout{Title Page}
+  \hypersetup{pdftitle={\@title}}
+  \hypersetup{pdfsubject=\subjectname}
+  \hypersetup{pdfauthor=\authornames}
+  \hypersetup{pdfkeywords=\keywordnames}
+  \thispagestyle{empty}
+  \begin{titlepage}
+    \let\footnotesize\small
+    \let\footnoterule\relax
+    \let \footnote \thanks
+    \setcounter{footnote}{0}
+    \null\vfill
+    \vskip 60pt
+    \begin{center}
+      \setlength{\parskip}{0pt}
+      {\large\textbf{\UNIVNAME}\par}
+      \vfill
+      {\huge \bf \mytitle \par}
+      \vfill
+      {\LARGE by \par}
+      \smallskip
+      {\LARGE \authornames \par}
+      \vfill
+      {\large A thesis submitted in partial fulfillment for the \par}
+      {\large degree of Doctor of Philosophy \par}
+      \bigskip
+      \bigskip
+      {\large in the \par}
+      {\large \facname \par}
+      {\large \deptname \par}
+      \bigskip
+      \bigskip
+      \bigskip
+      {\Large \today \par}
+      \bigskip
+    \end{center}
+    \par
+    % \@thanks
+    \vfil\null
+  \end{titlepage}
+  \setcounter{footnote}{0}%
+  % \global\let\thanks\relax
+  % \global\let\maketitle\relax
+  % \global\let\@thanks\@empty
+  % \global\let\@author\@empty
+  % \global\let\@date\@empty
+  % \global\let\@title\@empty
+  % \global\let\title\relax
+  % \global\let\author\relax
+  % \global\let\date\relax
+  % \global\let\and\relax
+  \cleardoublepage
+}
+
+\maketitle
+

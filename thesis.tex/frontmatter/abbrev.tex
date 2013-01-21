@@ -1,0 +1,21 @@
+\makeatletter
+\newcommand\listsymbolname{Abbreviations}
+\newcommand\listofsymbols[2]{
+\btypeout{\listsymbolname}
+\addtotoc{\listsymbolname}
+    \chapter*{\listsymbolname
+      \@mkboth{
+          \MakeUppercase\listsymbolname}{\MakeUppercase\listsymbolname}}
+\begin{longtable}[c]{#1}#2\end{longtable}\par
+    \cleardoublepage
+}
+\makeatother
+
+
+\clearpage  % Start a new page
+\listofsymbols{ll}  % Include a list of Abbreviations (a table of two columns)
+{
+% \textbf{Acronym} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or \\
+\textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere \\
+
+}

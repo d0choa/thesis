@@ -1,0 +1,23 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ochoa et~al.(2013)Ochoa, Garc{\'\i}a-Guti{\'e}rrez, Juan, Valencia,
+  and Pazos]{Ochoa:2013jf}
+David Ochoa, Ponciano Garc{\'\i}a-Guti{\'e}rrez, David Juan, Alfonso Valencia,
+  and Florencio Pazos.
+\newblock {Incorporating information on predicted solvent accessibility to the
+  co-evolution-based study of protein interactions.}
+\newblock \emph{Molecular bioSystems}, 9\penalty0 (1):\penalty0 70--76, January
+  2013.
+
+\bibitem[Pazos et~al.(2005)Pazos, Ranea, Juan, and Sternberg]{Pazos:2005hl}
+Florencio Pazos, Juan A~G Ranea, David Juan, and Michael J~E Sternberg.
+\newblock {Assessing protein co-evolution in the context of the tree of life
+  assists in the prediction of the interactome.}
+\newblock \emph{J Mol Biol}, 352\penalty0 (4):\penalty0 1002--1015, 2005.
+
+\end{thebibliography}

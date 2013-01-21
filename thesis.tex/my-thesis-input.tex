@@ -1,0 +1,50 @@
+\begin{document}
+
+% the front matter
+\frontmatter
+\input{frontmatter/coverpage}
+\input{frontmatter/authorlist}
+\input{frontmatter/quotes}
+\input{frontmatter/abstract}
+\input{frontmatter/toc}
+
+\mainmatter	  % Begin normal, numeric (1,2,3...) page numbering
+\onehalfspacing
+
+% %Chapter title
+\definecolor{gray75}{gray}{0.75}
+
+\renewcommand\thesection{\arabic{section}}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[display]
+  {\usefont{T1}{qhv}{b}{n}\selectfont\color{Crimson}}
+  {}
+  {0pt}
+  {\Huge}
+\titleformat{\section}[display]
+	{\usefont{T1}{qhv}{b}{n}\selectfont\color{black}}
+	{}
+	{0pt}
+	{\hspace{-0.4pt}\Large \thesection\hspace{0.6em}}
+
+
+This is for the toc
+\titlecontents{chapter}
+  [0em]{\usefont{T1}{qhv}{b}{n}\selectfont\color{Crimson}}
+  {}
+  {}
+  {\titlerule*[1000pc]{.}\contentspage}
+
+\titleformat{name=\chapter,numberless}[display]
+  {\normalfont\huge\bfseries}{}{0pt}{\Huge}
+
+% \titlespacing*{\chapter}{0pt}{50pt}{*2}
+
+% Define a new fontfamily for the subsubsection font
+% Don't use \fontspec directly to change the font
+% \newfontfamily\subsubsectionfont[Color=MSLightBlue]{Times New Roman}
+% Set formats for each heading level
+% \titleformat{name=\chapter,numberless}[display]{\Large\bfseries\sffamily\color{black}}
+% \titleformat*{\section}{\Large\bfseries\sffamily\color{black}}
+% \titleformat*{\subsection}{\large\bfseries\sffamily\color{black}}
+% \titleformat*{\subsubsection}{\itshape\subsubsectionfont}

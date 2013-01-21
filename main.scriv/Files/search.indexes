@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SearchIndexes Version="1.0">
+    <Documents>
+        <Document ID="10">
+            <Title>Systems Biology and Protein-Protein Interactions</Title>
+        </Document>
+        <Document ID="15">
+            <Title>Problems on experimental technics</Title>
+            <Text>However, the many discrepancies between the interacting partners identified in high-throughput studies and those identified in small-scale experiments highlight the need for caution when interpreting results from high-throughput studies. These discrepancies also call for the development of computational methods of data validation. Even when interactions have been validated, one needs to be aware that, as was demonstrated recently by Edwards et al. [2􏰀], the majority of the experimental evidence cannot distinguish between direct interactions and those mediated by at least one intermediate protein.
+
+These studies have been extremely valu- able toward our understanding of protein interaction networks, but they suffer from inherent experimental biases in terms of the types of interaction that can be detected. The first S. cerevisiae network, for example, was estimated to have a false-negative rate of 90% and a false-positive rate of 50% (von Mering et al. 2002; Sprinzak et al. 2003). Nevertheless, accuracy can be increased bycombining data sets (Bader and Hogue 2002; von Mering et al. 2002; Yu et al. 2008), by repeated screening (Venkatesan et al. 2009) and confidence evaluation (Yu et al. 2008; Braun et al. 2009), and by comparing data sets from different species (Kalaev et al. 2008).
+Complementary approaches based on experimental data as well as on sequence and evolutionary analyses are required in order to describe a system with a sufficient degree of detail so that it may effectively be understood.</Text>
+        </Document>
+        <Document ID="3">
+            <Title>introducing</Title>
+            <Text>The European languages [#Ochoa:2013jf] are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.
+
+To achieve this[#Pazos:2005hl], it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.</Text>
+        </Document>
+        <Document ID="11">
+            <Title>PPIs as networks</Title>
+            <Text>Cellular proteins rarely work in isolation, but are more usually involved in pathways and interaction networks. Dysfunctional networks are commonly implicated in disease, so an elucidation of protein–protein interactions can greatly contribute to our un- derstanding of pathological states, and much more broadly, of molecular biology. </Text>
+        </Document>
+        <Document ID="4">
+            <Title>Introduction</Title>
+            <Text>Este apartado contiene la introducción</Text>
+        </Document>
+        <Document ID="5">
+            <Title>part 2</Title>
+            <Text>This is a complete overview of the section.</Text>
+        </Document>
+        <Document ID="12">
+            <Title>Types of interactions</Title>
+            <Text>Protein interactions can be classified into different types depending on their strength (permanent and transient), specificity (specific or nonspecific), the location of interacting partners within one or on two polypeptide chains, and the similarity between interacting subunits (homo- and hetero-oligomers)
+
+Systems biology relies on accurate representa- tions of interaction networks, but these are often hard to describe. Interactions can be conditional or contextual, and may not always be captured in a given study, regardless of its attention to quality.</Text>
+        </Document>
+        <Document ID="6">
+            <Title>Preamble</Title>
+            <Text>Empezando a escribir el documento.</Text>
+        </Document>
+        <Document ID="13">
+            <Title>Experimental Methods</Title>
+            <Text>Salwinski, L. &amp; Eisenberg, D. Computational methods of analysis of protein-protein interactions. Curr Opin Struct Biol 13, 377–382 (2003).
+Shoemaker, B. A. &amp; Panchenko, A. R. Deciphering protein-protein interactions. Part I. Experimental techniques and databases. PLoS Comput Biol 3, e42 (2007).</Text>
+        </Document>
+        <Document ID="7">
+            <Title>Untitled</Title>
+        </Document>
+        <Document ID="8">
+            <Title>Untitled</Title>
+        </Document>
+        <Document ID="14">
+            <Title>High throughput studies</Title>
+            <Text>Large protein–protein interaction networks are commonly obtained from high-throughput experiments. Such large-scale efforts have described the interaction maps for organisms such as Helicobacter pylori (Rain et al. 2001), Escherichia coli (Butland et al. 2005), Saccharomyces cerevisiae (Ito et al. 2000; Schwikowski et al. 2000; Uetz et al. 2000; Gavin et al. 2002; Ho et al. 2002), Caeno- rhabditis elegans (Walhout et al. 2000; Simonis et al. 2009), Dro- sophila melanogaster (Giot et al. 2003), and Homo sapiens (Rual et al. 2005; Stelzl et al. 2005).</Text>
+        </Document>
+        <Document ID="9">
+            <Title>Introduction</Title>
+        </Document>
+    </Documents>
+</SearchIndexes>

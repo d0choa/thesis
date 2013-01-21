@@ -1,0 +1,58 @@
+
+\documentclass[a4paper, 11pt, twoside]{book}  % Use the "Thesis" style, based on the ECS Thesis style by Steve Gunn
+\usepackage[DIV=14,BCOR=2mm,headinclude=true,footinclude=false]{typearea}
+
+\makeatletter
+\if@twoside % commands below work only for twoside option of \documentclass
+    \newlength{\textblockoffset}
+    \setlength{\textblockoffset}{12mm}
+    \addtolength{\hoffset}{\textblockoffset}
+    \addtolength{\evensidemargin}{-2.0\textblockoffset}
+\fi
+\makeatother
+
+%microtype
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+% activate={true,nocompatibility} - activate protrusion and expansion
+% final - enable microtype; use "draft" to disable
+% tracking=true, kerning=true, spacing=true - activate these techniques
+% factor=1100 - add 10% to the protrusion amount (default is 1000)
+% stretch=10, shrink=10 - reduce stretchability/shrinkability (default is 20/20)
+
+% \graphicspath{{Figures/}}  % Location of the graphics files (set up for graphics to be in PDF format)
+% % Include any extra LaTeX packages required
+\usepackage[square, numbers, comma, sort&compress]{natbib}  % Use the "Natbib" style for the references in the Bibliography
+\usepackage{verbatim}  % Needed for the "comment" environment to make LaTeX comments
+\usepackage{vector}  % Allows "\bvec{}" and "\buvec{}" for "blackboard" style bold vectors in maths
+
+\usepackage{color}
+\definecolor{Crimson}{rgb}{0.6471, 0.1098, 0.1882}
+
+%hyperref for references
+\usepackage[pdfpagemode={UseOutlines},bookmarks=true,bookmarksopen=true,
+   bookmarksopenlevel=0,bookmarksnumbered=true,hypertexnames=false,
+   colorlinks,linkcolor=black,citecolor=Crimson,urlcolor=Crimson,
+   pdfstartview={FitV},unicode,breaklinks=true]{hyperref}
+
+\usepackage{setspace}
+
+%fonts
+% \usepackage[T1]{fontenc}
+\usepackage{charter}	%main font
+\usepackage[expert]{mathdesign}	%formulas
+% \usepackage{fontspec}
+% \setsansfont{Calibri}	
+
+\usepackage{amsmath,amsfonts,amssymb,amscd,amsthm,xspace}
+\usepackage{verbatim}
+\usepackage{longtable}
+
+%Caption
+% \usepackage[scriptsize]{subfigure}
+% \usepackage[subfigure]{tocloft} % subfigure option only if using subfigure package
+
+\usepackage{titlesec, blindtext, color}
+\usepackage{titletoc}
+\usepackage{subfigure}
+\usepackage[subfigure]{tocloft} % subfigure option only if using subfigure package
+

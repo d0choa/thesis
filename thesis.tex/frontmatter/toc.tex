@@ -1,0 +1,51 @@
+%% ----------------------------------------------------------------
+% \lhead{\emph{Contents}}  % Set the left side page header to "Contents"
+
+% \renewcommand{\cfttoctitlefont} % ToC title
+%              {\usefont{T1}{qhv}{b}{n}\selectfont\huge}
+% \renewcommand{\cftchapfont} % chapter titles
+%              {\usefont{T1}{qhv}{b}{n}\selectfont}
+% \renewcommand{\cftsecfont} % section titles
+%              {\usefont{T1}{qhv}{b}{n}\selectfont}
+% \renewcommand{\cftsubsecfont} % subsection titles
+%              {\usefont{T1}{bch}{m}{n}\selectfont} 
+% \renewcommand{\cftchappagefont} % chapter page numbers
+%              {\usefont{T1}{bch}{b}{n}\selectfont}
+% \renewcommand{\cftsecpagefont} % section page numbers
+%              {\cftsecfont} 
+% \renewcommand{\cftsubsecpagefont} % subsection page numbers
+%              {\cftsubsecfont}
+
+\addtocounter{secnumdepth}{1}
+\setcounter{tocdepth}{6}
+\newcounter{dummy}
+
+\newcommand\addtotoc[1]{
+\refstepcounter{dummy}
+\addcontentsline{toc}{chapter}{#1}}
+	
+\onehalfspacing
+
+\makeatletter
+\renewcommand\tableofcontents{
+	\btypeout{Table of Contents}
+	\begin{spacing}{1}{
+	    \setlength{\parskip}{1pt}
+	    \if@twocolumn
+	      \@restonecoltrue\onecolumn
+	    \else
+	      \@restonecolfalse
+	    \fi
+	    \chapter*{\contentsname
+	        \@mkboth{
+	           \MakeUppercase\contentsname}{\MakeUppercase\contentsname}}
+	    \@starttoc{toc}
+	    \if@restonecol\twocolumn\fi
+	   \cleardoublepage
+	}\end{spacing}
+}
+\makeatother
+
+
+\tableofcontents  % Write out the Table of Contents
+
