@@ -337,7 +337,7 @@ p.shot {text-align:left; text-indent:0; margin: 12pt 0pt 0pt 0pt; text-transform
 	<key>SCRCompileFootnotesStyleKey</key>
 	<integer>0</integer>
 	<key>SCRCompileFormatKey</key>
-	<integer>31</integer>
+	<integer>35</integer>
 	<key>SCRCompileFrontMatterIDKey</key>
 	<integer>-1</integer>
 	<key>SCRCompileGeneratePDFWithAspose</key>
@@ -442,7 +442,7 @@ p.shot {text-align:left; text-indent:0; margin: 12pt 0pt 0pt 0pt; text-transform
 		</dict>
 		<dict>
 			<key>data</key>
-			<string>my-thesis-header</string>
+			<string>/Users/dochoa/Projects/thesis/thesis.tex/my-thesis-header  </string>
 			<key>key</key>
 			<string>latex input</string>
 		</dict>
@@ -454,7 +454,7 @@ p.shot {text-align:left; text-indent:0; margin: 12pt 0pt 0pt 0pt; text-transform
 		</dict>
 		<dict>
 			<key>data</key>
-			<string>bibliography</string>
+			<string>/Users/dochoa/Projects/thesis/thesis.tex/bibliography</string>
 			<key>key</key>
 			<string>BibTex</string>
 		</dict>
@@ -472,13 +472,13 @@ p.shot {text-align:left; text-indent:0; margin: 12pt 0pt 0pt 0pt; text-transform
 		</dict>
 		<dict>
 			<key>data</key>
-			<string>my-thesis-input</string>
+			<string>/Users/dochoa/Projects/thesis/thesis.tex/my-thesis-input</string>
 			<key>key</key>
 			<string>latex input</string>
 		</dict>
 		<dict>
 			<key>data</key>
-			<string>my-thesis-footer</string>
+			<string>/Users/dochoa/Projects/thesis/thesis.tex/my-thesis-footer</string>
 			<key>key</key>
 			<string>latex footer</string>
 		</dict>
