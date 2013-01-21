@@ -1,9 +1,0 @@
-\ttl@change@i {\@ne }{chapter}{0em}{\usefont {T1}{qhv}{b}{n}\selectfont \color {Crimson}}{}{}{\titlerule *[1000pc]{.}\contentspage }\relax 
-\ttl@change@v {chapter}{}{}{}\relax 
-\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.2}
-\contentsline {section}{\numberline {1}First Chapters}{3}{section.3}
-\contentsline {subsection}{\numberline {1.1}Testing Chapters}{3}{subsection.4}
-\contentsline {chapter}{References}{5}{subsection.4}
-\contentsline {chapter}{Abbreviations}{6}{dummy.6}
-\contentsline {chapter}{Acknowledgements}{9}{dummy.9}
-\contentsfinish 
