@@ -38,7 +38,7 @@
 \newcommand*{\faculty}[1]{\def\facname{#1}}
 \newcommand*{\FACULTY}[1]{\def\FACNAME{#1}}
 \newcommand*{\subject}[1]{\def\subjectname{#1}}
-\newcommand*{\keywords}[1]{\def\keywordnames{#1}}
+% \newcommand*{\keywords}[1]{\def\keywordnames{#1}}
 \supervisor  {}
 \examiner    {}
 \degree      {}
@@ -69,7 +69,7 @@
                 {FACULTY NAME (IN BLOCK CAPITALS)}}
 \addresses   {}
 \subject     {}
-\keywords    {}
+% \keywords    {}
 
 
 
@@ -81,7 +81,7 @@
 \addresses  {\groupname\\\deptname\\\univname}  % Do not change this here, instead these must be set in the "Thesis.cls" file, please look through it instead
 \date       {\today}
 \subject    {}
-\keywords   {\mykeywords}
+% \keywords   {\mykeywords}
 
 
 
@@ -90,7 +90,7 @@
   \hypersetup{pdftitle={\@title}}
   \hypersetup{pdfsubject=\subjectname}
   \hypersetup{pdfauthor=\authornames}
-  \hypersetup{pdfkeywords=\keywordnames}
+  \hypersetup{pdfkeywords=\keywords}
   \thispagestyle{empty}
   \begin{titlepage}
     \let\footnotesize\small
