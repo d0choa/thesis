@@ -206,7 +206,7 @@ p.shot {text-align:left; text-indent:0; margin: 12pt 0pt 0pt 0pt; text-transform
 			<key>SCRIncludeSynopsesKey</key>
 			<false/>
 			<key>SCRIncludeTextKey</key>
-			<false/>
+			<true/>
 			<key>SCRIncludeTitlesKey</key>
 			<true/>
 			<key>SCRMainTextWordsToUppercaseInNewSectionsKey</key>
@@ -661,7 +661,7 @@ p.shot {text-align:left; text-indent:0; margin: 12pt 0pt 0pt 0pt; text-transform
 			<key>SCRIncludeTextKey</key>
 			<true/>
 			<key>SCRIncludeTitlesKey</key>
-			<false/>
+			<true/>
 			<key>SCRMainTextWordsToUppercaseInNewSectionsKey</key>
 			<integer>0</integer>
 			<key>SCRMetaDataAttributesKey</key>
@@ -787,7 +787,7 @@ p.shot {text-align:left; text-indent:0; margin: 12pt 0pt 0pt 0pt; text-transform
 			<key>SCRIncludeTextKey</key>
 			<true/>
 			<key>SCRIncludeTitlesKey</key>
-			<false/>
+			<true/>
 			<key>SCRMainTextWordsToUppercaseInNewSectionsKey</key>
 			<integer>0</integer>
 			<key>SCRMetaDataAttributesKey</key>

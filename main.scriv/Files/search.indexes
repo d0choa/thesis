@@ -25,15 +25,29 @@ To achieve this[#Pazos:2005hl], it would be necessary to have uniform grammar, p
             <Title>Introduction</Title>
             <Text>Este apartado contiene la introducción</Text>
         </Document>
+        <Document ID="16">
+            <Title>Systems Biology and Protein-Protein Interactions</Title>
+            <Text>The Systems Biology relies on the study of mentioned complex interactions within biological systems. Contrary to the more traditional reductionism, this discipline approaches the biological problems from a holistic point of view. Indeed, the reductionism  has been extremely successful explaining many areas of the Biology, but for many reasons, the integration of data is necessary to solve problems that can not be understand as the sum of the parts.
+
+The change in the paradigm together with different high-throughput technics give birth to what is known as the Omics era. Genomics, Proteomics or Metabolomics are just a few of the many research areas emerged during the last decade producing massive amounts of data. As a result, new methodologies and infrastructures previously applied to other scientific areas appeared to solve biomedical problems. One of this new areas is the study of the biological networks.
+</Text>
+        </Document>
         <Document ID="5">
             <Title>part 2</Title>
             <Text>This is a complete overview of the section.</Text>
         </Document>
         <Document ID="12">
             <Title>Types of interactions</Title>
-            <Text>Protein interactions can be classified into different types depending on their strength (permanent and transient), specificity (specific or nonspecific), the location of interacting partners within one or on two polypeptide chains, and the similarity between interacting subunits (homo- and hetero-oligomers)
+            <Text>Protein interactions can be classified into different types depending on their strength (permanent and transient), specificity (specific or nonspecific), the location of interacting partners within one or on two polypeptide chains, and the similarity between interacting subunits (homo- and hetero-oligomers)</Text>
+        </Document>
+        <Document ID="17">
+            <Title>Biological Networks</Title>
+            <Text>The study of interactions between the components of biological systems and how these interactions give rise the function and behaviour of the system has been frequently modelled using networks. Many systems take the form of networks 
 
-Systems biology relies on accurate representa- tions of interaction networks, but these are often hard to describe. Interactions can be conditional or contextual, and may not always be captured in a given study, regardless of its attention to quality.</Text>
+The molecular entities are usually represented as nodes connected by edges representing different kinds of relationships. Under this schema, multiple kinds of biological systems has been represented: food webs, gene-regulatory networks or protein-protein interaction networks among many others. 
+
+However, these relationships are often hard to describe. Interactions can be conditional or contextual, and may not always be captured in a given study, regardless of its attention to quality.
+</Text>
         </Document>
         <Document ID="6">
             <Title>Preamble</Title>
@@ -56,6 +70,7 @@ Shoemaker, B. A. &amp; Panchenko, A. R. Deciphering protein-protein interactions
         </Document>
         <Document ID="9">
             <Title>Introduction</Title>
+            <Text>The outcome of most biological processes can hardly be understood without the comprehensive analysis of large number of components and interactions. From the most simple systems in the minimal organisms to the mammal complex machineries, the relationship between different molecules usually determines the resulting phenotype. Focusing on cellular proteins, they rarely work in isolation but are frequently involved in pathways and interaction networks. The eventual perturbation of this networks normally implicates disease or even death, so an elucidation of protein-protein interactions can greatly contribute to our understanding of pathological states.</Text>
         </Document>
     </Documents>
 </SearchIndexes>
