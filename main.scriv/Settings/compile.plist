@@ -35,7 +35,7 @@
 	<key>SCRCompileConvertEllipsesToTriplePeriodsKey</key>
 	<false/>
 	<key>SCRCompileConvertEmDashesToHyphensKey</key>
-	<false/>
+	<true/>
 	<key>SCRCompileConvertItalicsToUnderlineKey</key>
 	<false/>
 	<key>SCRCompileConvertLinkedRTFDImagesToEmbeddedImagesKey</key>
@@ -45,7 +45,7 @@
 	<key>SCRCompileConvertMultiMarkdownToRichTextKey</key>
 	<false/>
 	<key>SCRCompileConvertSpacesKey</key>
-	<false/>
+	<true/>
 	<key>SCRCompileConvertSpacingToPlainTextKey</key>
 	<false/>
 	<key>SCRCompileConvertUnderlineToItalicsKey</key>
@@ -337,7 +337,7 @@ p.shot {text-align:left; text-indent:0; margin: 12pt 0pt 0pt 0pt; text-transform
 	<key>SCRCompileFootnotesStyleKey</key>
 	<integer>0</integer>
 	<key>SCRCompileFormatKey</key>
-	<integer>35</integer>
+	<integer>31</integer>
 	<key>SCRCompileFrontMatterIDKey</key>
 	<integer>-1</integer>
 	<key>SCRCompileGeneratePDFWithAspose</key>
@@ -460,7 +460,7 @@ p.shot {text-align:left; text-indent:0; margin: 12pt 0pt 0pt 0pt; text-transform
 		</dict>
 		<dict>
 			<key>data</key>
-			<string>plainnat</string>
+			<string>unsrtnat</string>
 			<key>key</key>
 			<string>Bibliostyle</string>
 		</dict>
@@ -490,7 +490,7 @@ p.shot {text-align:left; text-indent:0; margin: 12pt 0pt 0pt 0pt; text-transform
 	<key>SCRCompileMultiMarkdownUsesMMD2SyntaxKey</key>
 	<false/>
 	<key>SCRCompileMultiMarkdownshowPDFLogKey</key>
-	<false/>
+	<true/>
 	<key>SCRCompileNoHeaderAfterPageBreaksKey</key>
 	<false/>
 	<key>SCRCompileNoHeaderOrFooterOnSinglePagesKey</key>
@@ -570,7 +570,16 @@ p.shot {text-align:left; text-indent:0; margin: 12pt 0pt 0pt 0pt; text-transform
 	bmFsUGFnaW5hdGlvboaShJucqpcChoaG
 	</data>
 	<key>SCRCompileProjectVariableReplacementsKey</key>
-	<array/>
+	<array>
+		<dict>
+			<key>replacement</key>
+			<string>,</string>
+			<key>variable</key>
+			<string>][</string>
+			<key>wholeWord</key>
+			<false/>
+		</dict>
+	</array>
 	<key>SCRCompileRTFColumnsStartLocationKey</key>
 	<integer>0</integer>
 	<key>SCRCompileRTFEnsureHyperlinksUseColorAndUnderlineKey</key>
@@ -642,7 +651,7 @@ p.shot {text-align:left; text-indent:0; margin: 12pt 0pt 0pt 0pt; text-transform
 	<key>SCRCompileStitchTablesTogetherKey</key>
 	<false/>
 	<key>SCRCompileStraightenTypographersQuotesKey</key>
-	<false/>
+	<true/>
 	<key>SCRCompileTextAndFolderCustomSeparatorStringKey</key>
 	<string></string>
 	<key>SCRCompileTextAndFolderSectionSeparatorKey</key>

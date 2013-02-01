@@ -13,7 +13,7 @@
                 </OutlinerExpandedState>
             </CorkboardAndOutliner>
             <Children>
-                <BinderItem ID="9" Type="Folder" Created="2013-01-18 13:36:01 +0100" Modified="2013-01-22 12:09:27 +0100">
+                <BinderItem ID="9" Type="Folder" Created="2013-01-18 13:36:01 +0100" Modified="2013-01-22 18:10:44 +0100">
                     <Title>Introduction</Title>
                     <MetaData>
                         <StatusID>0</StatusID>
@@ -30,7 +30,7 @@
                         </OutlinerExpandedState>
                     </CorkboardAndOutliner>
                     <Children>
-                        <BinderItem ID="16" Type="Text" Created="2013-01-21 18:45:06 +0100" Modified="2013-01-22 16:22:31 +0100">
+                        <BinderItem ID="16" Type="Text" Created="2013-01-21 18:45:06 +0100" Modified="2013-01-23 16:28:04 +0100">
                             <Title>Systems Biology and Protein-Protein Interactions</Title>
                             <MetaData>
                                 <StatusID>0</StatusID>
@@ -41,7 +41,7 @@
                                 <TextSelection>0,0</TextSelection>
                             </TextSettings>
                             <Children>
-                                <BinderItem ID="17" Type="Text" Created="2013-01-22 13:31:37 +0100" Modified="2013-01-22 16:38:16 +0100">
+                                <BinderItem ID="17" Type="Text" Created="2013-01-22 13:31:37 +0100" Modified="2013-01-24 12:06:30 +0100">
                                     <Title>Biological Networks</Title>
                                     <MetaData>
                                         <IncludeInCompile>Yes</IncludeInCompile>
@@ -51,51 +51,121 @@
                                         <TextSelection>0,0</TextSelection>
                                     </TextSettings>
                                 </BinderItem>
+                                <BinderItem ID="12" Type="Text" Created="2013-01-18 13:36:01 +0100" Modified="2013-01-25 16:09:43 +0100">
+                                    <Title>Protein-Protein Interactions</Title>
+                                    <MetaData>
+                                        <StatusID>0</StatusID>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <NotesTextSelection>55,0</NotesTextSelection>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>576,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem ID="13" Type="Text" Created="2013-01-18 13:36:01 +0100" Modified="2013-01-25 17:19:37 +0100">
+                                    <Title>Experimental Determination of PPIs</Title>
+                                    <MetaData>
+                                        <StatusID>0</StatusID>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <NotesTextSelection>1250,0</NotesTextSelection>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>1569,0</TextSelection>
+                                    </TextSettings>
+                                    <Children>
+                                        <BinderItem ID="24" Type="Text" Created="2013-01-24 12:43:35 +0100" Modified="2013-01-24 17:21:08 +0100">
+                                            <Title>Yeast two-hybrid</Title>
+                                            <MetaData>
+                                                <IncludeInCompile>Yes</IncludeInCompile>
+                                                <NotesTextSelection>0,0</NotesTextSelection>
+                                            </MetaData>
+                                            <TextSettings>
+                                                <TextSelection>114,0</TextSelection>
+                                            </TextSettings>
+                                        </BinderItem>
+                                        <BinderItem ID="25" Type="Text" Created="2013-01-24 17:22:04 +0100" Modified="2013-01-24 19:52:05 +0100">
+                                            <Title>Affinity purification/mass spectrometric identification</Title>
+                                            <MetaData>
+                                                <IncludeInCompile>Yes</IncludeInCompile>
+                                                <NotesTextSelection>0,0</NotesTextSelection>
+                                            </MetaData>
+                                            <TextSettings>
+                                                <TextSelection>776,0</TextSelection>
+                                            </TextSettings>
+                                        </BinderItem>
+                                        <BinderItem ID="26" Type="Text" Created="2013-01-24 23:57:16 +0100" Modified="2013-01-25 13:07:17 +0100">
+                                            <Title>Synthetic lethality</Title>
+                                            <MetaData>
+                                                <IncludeInCompile>Yes</IncludeInCompile>
+                                                <NotesTextSelection>0,1126</NotesTextSelection>
+                                            </MetaData>
+                                            <TextSettings>
+                                                <TextSelection>649,0</TextSelection>
+                                            </TextSettings>
+                                        </BinderItem>
+                                        <BinderItem ID="30" Type="Text" Created="2013-01-25 00:14:21 +0100" Modified="2013-01-25 14:28:03 +0100">
+                                            <Title>Protein chips</Title>
+                                            <MetaData>
+                                                <IncludeInCompile>Yes</IncludeInCompile>
+                                                <NotesTextSelection>5300,0</NotesTextSelection>
+                                            </MetaData>
+                                            <TextSettings>
+                                                <TextSelection>198,0</TextSelection>
+                                            </TextSettings>
+                                        </BinderItem>
+                                        <BinderItem ID="29" Type="Text" Created="2013-01-25 00:13:42 +0100" Modified="2013-01-25 14:27:29 +0100">
+                                            <Title>Phage display</Title>
+                                            <MetaData>
+                                                <IncludeInCompile>Yes</IncludeInCompile>
+                                                <NotesTextSelection>3969,0</NotesTextSelection>
+                                            </MetaData>
+                                            <TextSettings>
+                                                <TextSelection>712,0</TextSelection>
+                                            </TextSettings>
+                                        </BinderItem>
+                                    </Children>
+                                </BinderItem>
+                                <BinderItem ID="28" Type="Text" Created="2013-01-25 00:11:06 +0100" Modified="2013-01-25 00:11:19 +0100">
+                                    <Title>Protein Interaction Databases</Title>
+                                    <MetaData>
+                                        <NotesTextSelection>0,0</NotesTextSelection>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>0,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem ID="15" Type="Text" Created="2013-01-18 13:36:01 +0100" Modified="2013-02-01 16:18:06 +0100">
+                                    <Title>High throughput limitations</Title>
+                                    <MetaData>
+                                        <StatusID>0</StatusID>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <NotesTextSelection>13,0</NotesTextSelection>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>2164,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
                             </Children>
                         </BinderItem>
-                        <BinderItem ID="12" Type="Text" Created="2013-01-18 13:36:01 +0100" Modified="2013-01-22 16:30:13 +0100">
-                            <Title>Types of interactions</Title>
+                        <BinderItem ID="31" Type="Text" Created="2013-01-25 16:01:46 +0100" Modified="2013-01-25 16:02:15 +0100">
+                            <Title>Computational methods</Title>
                             <MetaData>
-                                <StatusID>0</StatusID>
-                                <IncludeInCompile>Yes</IncludeInCompile>
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
                                 <TextSelection>0,0</TextSelection>
                             </TextSettings>
-                        </BinderItem>
-                        <BinderItem ID="13" Type="Text" Created="2013-01-18 13:36:01 +0100" Modified="2013-01-21 11:39:45 +0100">
-                            <Title>Experimental Methods</Title>
-                            <MetaData>
-                                <StatusID>0</StatusID>
-                                <IncludeInCompile>Yes</IncludeInCompile>
-                                <NotesTextSelection>0,0</NotesTextSelection>
-                            </MetaData>
-                            <TextSettings>
-                                <TextSelection>0,0</TextSelection>
-                            </TextSettings>
-                        </BinderItem>
-                        <BinderItem ID="14" Type="Text" Created="2013-01-18 13:36:01 +0100" Modified="2013-01-21 11:39:47 +0100">
-                            <Title>High throughput studies</Title>
-                            <MetaData>
-                                <StatusID>0</StatusID>
-                                <IncludeInCompile>Yes</IncludeInCompile>
-                                <NotesTextSelection>0,0</NotesTextSelection>
-                            </MetaData>
-                            <TextSettings>
-                                <TextSelection>0,0</TextSelection>
-                            </TextSettings>
-                        </BinderItem>
-                        <BinderItem ID="15" Type="Text" Created="2013-01-18 13:36:01 +0100" Modified="2013-01-21 11:39:48 +0100">
-                            <Title>Problems on experimental technics</Title>
-                            <MetaData>
-                                <StatusID>0</StatusID>
-                                <IncludeInCompile>Yes</IncludeInCompile>
-                                <NotesTextSelection>0,0</NotesTextSelection>
-                            </MetaData>
-                            <TextSettings>
-                                <TextSelection>0,0</TextSelection>
-                            </TextSettings>
+                            <Children>
+                                <BinderItem ID="32" Type="Text" Created="2013-01-25 16:03:31 +0100" Modified="2013-01-25 16:05:28 +0100">
+                                    <Title>Interologs</Title>
+                                    <MetaData>
+                                        <NotesTextSelection>1022,0</NotesTextSelection>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>0,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                            </Children>
                         </BinderItem>
                     </Children>
                 </BinderItem>
@@ -113,88 +183,35 @@
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <Children>
-                <BinderItem ID="7" Type="Text" Created="2013-01-02 23:46:00 +0100" Modified="2013-01-02 23:46:00 +0100">
-                    <Title>Untitled</Title>
-                    <MetaData>
-                        <IncludeInCompile>Yes</IncludeInCompile>
-                        <NotesTextSelection>0,0</NotesTextSelection>
-                    </MetaData>
-                    <TextSettings>
-                        <TextSelection>0,0</TextSelection>
-                    </TextSettings>
-                </BinderItem>
-                <BinderItem ID="8" Type="Text" Created="2013-01-02 23:57:24 +0100" Modified="2013-01-02 23:57:24 +0100">
-                    <Title>Untitled</Title>
-                    <MetaData>
-                        <IncludeInCompile>Yes</IncludeInCompile>
-                        <NotesTextSelection>0,0</NotesTextSelection>
-                    </MetaData>
-                    <TextSettings>
-                        <TextSelection>0,0</TextSelection>
-                    </TextSettings>
-                </BinderItem>
-                <BinderItem ID="6" Type="Text" Created="2013-01-02 23:45:36 +0100" Modified="2013-01-02 23:57:14 +0100">
-                    <Title>Preamble</Title>
-                    <MetaData>
-                        <IncludeInCompile>Yes</IncludeInCompile>
-                        <NotesTextSelection>0,0</NotesTextSelection>
-                    </MetaData>
-                    <TextSettings>
-                        <TextSelection>34,0</TextSelection>
-                    </TextSettings>
-                </BinderItem>
-                <BinderItem ID="4" Type="Folder" Created="2013-01-02 23:41:22 +0100" Modified="2013-01-02 23:53:22 +0100">
-                    <Title>Introduction</Title>
-                    <MetaData>
-                        <PageBreakBefore>Yes</PageBreakBefore>
-                        <IncludeInCompile>Yes</IncludeInCompile>
-                        <NotesTextSelection>0,0</NotesTextSelection>
-                    </MetaData>
-                    <TextSettings>
-                        <TextSelection>0,0</TextSelection>
-                    </TextSettings>
-                    <Children>
-                        <BinderItem ID="3" Type="Text" Created="2013-01-02 19:30:51 +0100" Modified="2013-01-04 12:40:30 +0100">
-                            <Title>introducing</Title>
-                            <MetaData>
-                                <IncludeInCompile>Yes</IncludeInCompile>
-                                <NotesTextSelection>0,0</NotesTextSelection>
-                            </MetaData>
-                            <TextSettings>
-                                <TextSelection>443,0</TextSelection>
-                            </TextSettings>
-                        </BinderItem>
-                        <BinderItem ID="5" Type="Text" Created="2013-01-02 23:41:35 +0100" Modified="2013-01-02 23:42:10 +0100">
-                            <Title>part 2</Title>
-                            <MetaData>
-                                <IncludeInCompile>Yes</IncludeInCompile>
-                                <NotesTextSelection>0,0</NotesTextSelection>
-                            </MetaData>
-                            <TextSettings>
-                                <TextSelection>43,0</TextSelection>
-                            </TextSettings>
-                        </BinderItem>
-                    </Children>
-                </BinderItem>
-                <BinderItem ID="10" Type="Text" Created="2013-01-18 13:36:01 +0100" Modified="2013-01-18 13:36:01 +0100">
-                    <Title>Systems Biology and Protein-Protein Interactions</Title>
-                    <MetaData>
-                        <IncludeInCompile>Yes</IncludeInCompile>
-                        <NotesTextSelection>0,0</NotesTextSelection>
-                    </MetaData>
-                    <TextSettings>
-                        <TextSelection>0,0</TextSelection>
-                    </TextSettings>
-                </BinderItem>
-                <BinderItem ID="11" Type="Text" Created="2013-01-18 13:36:01 +0100" Modified="2013-01-21 16:47:08 +0100">
-                    <Title>PPIs as networks</Title>
+                <BinderItem ID="14" Type="Text" Created="2013-01-18 13:36:01 +0100" Modified="2013-01-24 17:33:50 +0100">
+                    <Title>High throughput studies</Title>
                     <MetaData>
                         <StatusID>0</StatusID>
                         <IncludeInCompile>Yes</IncludeInCompile>
                         <NotesTextSelection>0,0</NotesTextSelection>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>336,0</TextSelection>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem ID="27" Type="Text" Created="2013-01-25 00:09:14 +0100" Modified="2013-01-25 00:09:27 +0100">
+                    <Title>P</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <NotesTextSelection>0,0</NotesTextSelection>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem ID="33" Type="Text" Created="2013-01-25 16:09:51 +0100" Modified="2013-01-25 16:10:05 +0100">
+                    <Title>Interactomes</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <NotesTextSelection>160,0</NotesTextSelection>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
             </Children>
@@ -233,7 +250,7 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2013-01-02 19:30:50 +0100" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" ResetType="Midnight" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="148" Characters="970" Date="2013-01-21 16:12:12 +0100"></PreviousSession>
+        <PreviousSession Words="133" Characters="876" Date="2013-02-01 11:25:38 +0100"></PreviousSession>
     </ProjectTargets>
-    <PrintSettings PaperSize="595.289978,841.890015" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
+    <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
 </ScrivenerProject>
