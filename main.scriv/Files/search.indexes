@@ -1,110 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <SearchIndexes Version="1.0">
     <Documents>
-        <Document ID="9">
-            <Title>Introduction</Title>
-            <Text>
-The outcome of most biological processes can hardly be understood without the comprehensive analysis of large number of components and interactions. From the most simple systems in the minimal organisms to the mammal complex machineries, the relationship between different molecules usually determines the resulting phenotype. Focusing on cellular proteins, they rarely work in isolation but are frequently involved in pathways and interaction networks. The eventual perturbation of this networks normally implicates disease or even death, so an elucidation of protein-protein interactions can greatly contribute to our understanding of pathological states.
-</Text>
-        </Document>
-        <Document ID="25">
-            <Title>Affinity purification/mass spectrometric identification</Title>
-            <Text>Tandem Affinity Purification (TAP) usually combined with Mass Spectrometry (MS) technics is a powerful methodology to identify protein-protein interactions and especially protein complexes. The TAP method involves the fusion of the target protein C-terminus with the TAP tag. This TAP Tag is a multi-domain chimeric protein containing calmodulin binding peptide (CBP) in the N-terminal, followed by the tobacco etch virus protease (TEV protease) cleavage site and Protein A which binds tightly with IgG[#Rigaut:1999jv][Puig:2001hz]. The engineered protein is expressed in the host cell where it can form native complexes with other proteins.
-
-The target protein and the interacting proteins are isolated using a two step purification process. First, the protein tightly binds to beads coated with IgG; and after washing out the contaminants, the TEV protease cuts the cleavage site. The elute of this first step is then adsorbed in a calmodulin-coated beads in the presence of calcium. After washing, the target protein complex is released using ethylene glycol tetraactetic acid (EGTA).
-
-The elution, containing the target protein and the interacting partners, are screened by polyacrylamide gel electrophoresis, cleaved by proteases and the fragments identified by MS. The basis of MS is to produce ions that can be identified based on their mass-to-charge ratios[#Causier:2004cq][DiTullio:2005bu][Aebersold:2003fn]. MS works by ionizing the peptides to produce charged molecules in the gas phase that could be analyzed and detected using electromagnetic fields[#Whitehouse:1985tc][Pieles:1993vn][Karas:1988vn]. Different algorithms implements the identification of the resulting mass spectra[#Yates:1995ww][Taylor:1997iw][Pevzner:2000ed][Geer:2004kv]. Despite we can find different variants of MS applied to the characterization of protein-protein interactions, purification of protein complexes still remains as the bottleneck of the process. </Text>
-        </Document>
-        <Document ID="15">
-            <Title>Modelling interactomes</Title>
-            <Text>Several large-scale protein-protein interaction studies have been performed using high-throughput experiments mostly using TAP-MS and Y2H. Interaction maps have been described in *Helicobacter pylori*[#Rain:2001ve], *Escherichia coli*[#Butland:2005in], *Saccharomyces cerevisiae*[#Ito:2000ly][Uetz:2000db][Schwikowski:2000bu][Gavin:2002dm][Ho:2002dn], *Caenorhabditis elegans*[#Walhout:2001gi][Simonis:2009va], *Drosophila melanogaster*[#Giot:2003fy] and *Homo sapiens*[#Rual:2005it][Stelzl:2005ht]. 
-
-However, the reproducibility of this analysis is one of the main drawbacks in the study of protein interactions. For instance, the first two genome-wide analysis performed in yeast revealed 692 and 841 putative interactions, respectively[#Uetz:2000db][Ito:2000ly]. Nevertheless, the overlapping between both sets was about 20% of the interactions[#Ito:2000ly]. Some authors estimated a false-negative rate of 90% and a false-positive rate of 50% for these datasets[#vonMering:2002kg][Sprinzak:2003ur]. 
-
-The reason of these particularly poor numbers could be partially explained by the inherent experimental biases of the technics. Y2H and TAP-MS , for instance, generate a lot of false positives and miss a lot of known interactions. Y2H has the advantage of being an *in vivo* technique which is able to accurately predict interactions without a prior knowledge of the complex. Nevertheless their results are bias towards nonspecific interactions and additional methodological limitations need to be considered[#Deeds:2006ia]. Among those limitations, proteins initiating transcription by themselves cannot be targeted. Besides, the structural effect of expressing sequence chimeras might be particularly awkward since fusion can change the structure of a target protein. In addition, protein folding and post-translational modifications can differ between yeast and other organisms. On the other hand, TAP-MS can report indirectly bound proteins being informative to detect protein complexes.
-</Text>
-            <Notes>______________________________________________________________
-why technically
-The small overlap between Y2H experiments can be explained by different factors, among them: differences in protein interaction sampling, Y2H bias towards nonspecific interactions [51], and limitations of the Y2H method itself. For example, proteins initiating transcription by themselves cannot be targeted in Y2H experiments; and the use of sequence chimeras can impose difficulties since fusion can change the structure of a target protein. In addition, protein folding and posttranslational modifications can differ between yeast and other organisms. This makes it difficult to screen proteins from mammalian and prokaryotic cells using Y2H as well as cytoplasmic and membrane proteins. To validate the quality of Y2H protein interactions in vivo, different in vitro techniques can be used.
-___________________
-An advantage of this method is that there can be real determination of protein partners quantitatively in vivo without prior knowledge of complex composition. It is also simple to execute and often provides high yield.[2] One of the obstacles of studying protein protein interaction is the contamination of the target protein especially when we don’t have any prior knowledge of it. TAP offers an effective, and highly specific means to purify target protein. After 2 successive affinity purifications, the chance for contaminants to be retained in the eluate reduces significantly.
-______________________________
-what to do
-However, the many discrepancies between the interacting partners identified in high-throughput studies and those identified in small-scale experiments highlight the need for caution when interpreting results from high-throughput studies. These discrepancies also call for the development of computational methods of data validation. Even when interactions have been validated, one needs to be aware that, as was demonstrated recently by Edwards et al., the majority of the experimental evidence cannot distinguish between direct interactions and those mediated by at least one intermediate protein.
-
-Complementary approaches based on experimental data as well as on sequence and evolutionary analyses are required in order to describe a system with a sufficient degree of detail so that it may effectively be understood.
-
-________
-Nevertheless, accuracy can be increased bycombining data sets (Bader and Hogue 2002; von Mering et al. 2002; Yu et al. 2008), by repeated screening (Venkatesan et al. 2009) and confidence evaluation (Yu et al. 2008; Braun et al. 2009), and by comparing data sets from different species (Kalaev et al. 2008).
-</Notes>
-        </Document>
-        <Document ID="26">
-            <Title>Synthetic lethality</Title>
-            <Text>Synthetic lethality is a very common type of *in vivo* genetic screening which tries to understand the mechanisms that allows phenotypic stability despite genetic variation, environmental changes and random events such as mutations. This methodology produces mutations or deletions in two or more genes which are viable alone but cause lethality when combined together under certain conditions[#Rutherford:2000hg][Hartman:2001ty][Bender:1991vh][Ooi:2006gp][Brown:2006ft]. A screening of this genetic dependencies can point to possible physical interactions between proteins, their participation in the same biochemical process or a similar function.</Text>
-            <Notes>Synthetic lethality method. It is not very well-understood how genetic variation influences phenotype and how genes interact with each other producing different phenotypes in different strains of the same species [77,78]. These problems can be addressed by using various genetic interaction methods, the most common of which is the synthetic lethality method (Figure 1F). The synthetic lethality method produces mutations or deletions of two separate genes which are viable alone but cause lethality when combined together in a cell under certain conditions [78–83]. Since these mutations are lethal, they cannot be isolated directly and should be synthetically constructed. Synthetic interaction can point to the possible physical interaction between two gene products, their participation in a single pathway, or a similar function. For example, synthetic lethality experiments enabled the prediction of the unknown function of the YLL049W gene as belonging to the dynein–dynactin pathway, and the bridging together of the two pathways of the parallel mitotic exit network and the Cdc14 early anaphase release pathway [83].
-______________________________
-Synthetic lethality arises when a combination of mutations in two or more genes leads to cell death, whereas a mutation in only one of these genes does not, and by itself is said to be viable[1] In a synthetic lethal genetic screen, it is necessary to begin with a mutation that does not kill the cell, although may confer a phenotype (for example, slow growth), and then systematically test other mutations at additional loci to determine which confer lethality.
-The importance of synthetic lethality as a type of genetic screen is reflected in the tendency of organisms to maintain buffering schemes that allows phenotypic stability despite genetic variation, environmental changes and random events such as mutations. Synthetic lethality can help identify these buffering relationships, and what type of disease or malfunction that may occur when these relationships break down, through the identification of gene interactions that function in either the same biochemical process or pathways that appear to be unrelated.[2] By exploring these relationships, a synthetic lethal screen may help illuminate questions about how cellular processes work when the protein products expressed by two different genes have an effect together but not separately.
-Synthetic lethality may be explored in a variety of model organisms, including Drosophila melanogaster and Saccharomyces cerevisiae. Since synthetic lethal mutations are inherently inviable, common approaches are to employ temperature sensitive mutations or put mutations under the control of a regulated promoter to allow exploration of the phenotype without leading to death.[3]
-[edit]
-</Notes>
-        </Document>
-        <Document ID="32">
-            <Title>Interologs</Title>
-            <Notes>Interaction maps obtained for one species can be used to predict interaction networks in other species, to identify functions of unknown proteins, and to get insight into the evolution of protein interaction patterns. The interaction map analyses and comparisons are based on the observation that many interactions are conserved among species (‘‘interologs’’) [46]. Sequence-based searches for ‘‘interologs’’ were able to identify 16%–31% of true ‘‘interologs’’ (tested using Y2H system) even between remotely related species such as yeast and worm [96]. Analysis of conservation in the networks produced by gene co-expression data revealed that interologs correspond to the functionally related genes responsible for core biological processes [77]. Moreover, a multiple-species network has been constructed by identifying pairs of genes with correlated expression in different organisms. A multiple-species network has shown to perform better than a single-species network in linking together functionally related genes.
-</Notes>
-        </Document>
-        <Document ID="16">
-            <Title>Systems Biology and Protein-Protein Interactions</Title>
-            <Text>
-The Systems Biology relies on the study of mentioned complex interactions within biological systems. Contrary to the more traditional reductionism, this discipline approaches the biological problems from a holistic point of view. Indeed, the reductionism  has been extremely successful explaining many areas of the Biology but, for many reasons, the integration of data is necessary to solve problems that can not be understand as the sum of the parts.
-
-The change in the paradigm together with different high-throughput technics give birth to what is known as the Omics era. Genomics, Proteomics or Metabolomics are just a few of the many research areas emerged during the last decade producing massive amounts of data. Therefore, new methodologies and infrastructures previously applied to other scientific areas appeared to solve biomedical problems. One of this new areas is the study of biological networks.
-</Text>
-        </Document>
-        <Document ID="27">
-            <Title>P</Title>
-        </Document>
-        <Document ID="33">
-            <Title>Interactomes</Title>
-            <Notes>The fast development of experimental techniques for protein interactions has enabled the construction and systematic analysis of interaction networks [1,2,95]. </Notes>
-        </Document>
         <Document ID="12">
             <Title>Protein-Protein Interactions</Title>
             <Text>
 Protein-Protein Interactions (PPIs) are the result of a physical binding between two or more proteins to accomplish a biological function. They can be classified into different types depending on their strength (permanent and transient), specificity (specific or nonspecific), the location of interacting partners within one or on two polypeptide chains, and the similarity between interacting subunits (homo- and hetero-oligomers). Protein interactions are necessary to achieve many cellular processes related with functions as diverse as signaling, transport or catalysis. The perturbation of this interactions, in particular the distortion of protein interface usually implies the development of many diseases. 
 </Text>
             <Notes>Protein interaction networks derived from experiments.
-</Notes>
-        </Document>
-        <Document ID="17">
-            <Title>Biological Networks</Title>
-            <Text>
-The study of interactions between the components of biological systems and how these interactions give rise the function and behavior of that process has been frequently modeled using networks[#Strogatz:2001fp]. Many systems take the form of networks when the entities are represented as nodes and their relationships as the connecting edges. This schema previously applied to social networks[#Wasserman:1994tg][Scott:2000wq][Watts:1998pd], food webs[#Williams:2000jc] or the World Wide Web[#Broder:2000bx] brings another analytical view of the complex relationships at molecular level.
-
-In the same way the structure of the power supply network affects the robustness and stability of power transmission, the architecture of biological networks informs about the characteristics of the systems under study. Surprisingly, a few common principles governs the topology of the real networks: 
-
-*	*Scale free*: most of the nodes have only a few interactions, and these coexist with a few highly connected nodes, the hubs, that hold the whole network together. Hence, the number of nodes with a given degree follows a power law distribution[#Barabasi:1999bh]. This scale free property has been reported in organisms for which protein-protein interaction and metabolic network exists, from yeast to human[#Barabasi:2004rm].
-
-*	*Small world*: any random pair of nodes can be easily connected with a path of relatively small number of links[#Milgram:1967vm]. This general trend is supported by evidences showing wether the metabolic network of a parasitic bacterium has the same average path length as the highly developed network of a large multi-cellular organism[#Jeong:2000ly]. That property indicates that any local perturbation can reach the whole network very quickly.
-
-*	*Transitivity*: this graph theory concept is fulfilled when the network is much more highly clustered than a random graph, in the sense that if *A* is linked to *B* and *B* is linked to *C*, there is a greatly increased probability that *A* will also be linked to *C*. Therefore, networks are usually enriched in subgraphs of highly inter-connected groups frequently involved in a common function[#Milo:2002cg].
-
-It’s impossible to ignore the apparent universality of topological characteristics in real networks including biological. Wether to use this concepts to explore the dynamics, evolution or robustness is still an area of research but many successful cases came out during the last few years. However, the relationships between the molecular entities are often hard to describe. Interactions can be conditional or contextual, and may not always be captured in a given study, regardless of its attention to quality. The modeling of accurate networks remains challenging in different areas as in the protein-protein interaction networks. 
-</Text>
-        </Document>
-        <Document ID="28">
-            <Title>Protein Interaction Databases</Title>
-        </Document>
-        <Document ID="13">
-            <Title>Experimental Determination of PPIs</Title>
-            <Text>
-The instability and heterogeneity of PPIs make their detection extremely sensible to the experimental setup. Different methods raised to screen interactions in order to capture their heterogenous nature.
-
-Traditionally, evidences are gathered using small scale experiments designed to identify and validate a small number of targeted interactions[#golemis2005protein].  Information defining protein interfaces at atomic level can be provided by X-ray crystallography and NMR spectroscopy. However, the number of solved protein complexes is still low and usually require to be combined with other methodologies as Electron Microscopy (EM)[#Berman:2000hl]. Several spectroscopic techniques characterize protein interactions in the real-time using different labels[#LippincottSchwartz:2003fu][Piehler:2005ev]. In that sense, Fluorescence resonance Energy Transfer (FRET), takes advantage of the modification in the spectral activity occurred when 2 fluorophores are close to each other[#Yan:2010fu]. Another methods as Surface Plasmon Resonance (SPR), has shown effective without spectroscopic labeling detecting interactions between soluble ligands and immobilized receptors[#Karlsson:2004di][Cooper:2003bd]. Isothermal Titration Calorimetry (ITC) allows to measure the enthalpy of binding[#VelazquezCampoy:2005ck]. Another methods can accurately analyze single molecules measuring the microscopic forces that bind the interacting proteins, as atomic force microscopy[#Yang:2003uk]; or detecting conformational changes as some fluorescence technics[#Margittai:2003ht]. 
-
-Nevertheless, during the last years a set of methodologies emerged to exhaustively probe all the potential interactions within entire genomes.</Text>
-            <Notes>Monitoring specific protein interactions. The most detailed information about protein interaction interfaces at the atomic level can be provided by X-ray crystallography and NMR spectroscopy, but the number of solved protein complexes remains low [84]. At the same time, the real-time characterization of interacting proteins in vivo can be achieved with various spectroscopic techniques requiring the attachment of a spectroscopic label to a target protein [87,88] (Table 1). A powerful technique in this respect is fluorescence resonance energy transfer (FRET), which can occur only if two fluorophores are located close to each other [89]. Another effective method, surface plasmon resonance (SPR), does not require spectroscopic labeling and can detect interactions between soluble ligands and immobilized receptors [90,91]; while the isothermal titration calorimetry (ITC) technique allows for direct measurement of the enthalpy of binding [92]. Recently, new methods have been developed to analyze protein interactions at the single- molecule level. For example, atomic force microscopy can fairly accurately measure interaction forces ([93]) while fluorescence techniques can characterize conformational changes in proteins upon binding [94].
 </Notes>
         </Document>
         <Document ID="30">
@@ -123,6 +25,46 @@ Proteins are highly sensitive to changes in their microenvironment. This present
 [edit]
 </Notes>
         </Document>
+        <Document ID="13">
+            <Title>Experimental Determination of PPIs</Title>
+            <Text>
+The instability and heterogeneity of PPIs make their detection extremely sensible to the experimental setup. Different methods raised to screen interactions in order to capture their heterogenous nature.
+
+Traditionally, evidences are gathered using small scale experiments designed to identify and validate a small number of targeted interactions[#golemis2005protein].  Information defining protein interfaces at atomic level can be provided by X-ray crystallography and NMR spectroscopy. However, the number of solved protein complexes is still low and usually require to be combined with other methodologies as Electron Microscopy (EM)[#Berman:2000hl]. Several spectroscopic techniques characterize protein interactions in the real-time using different labels[#LippincottSchwartz:2003fu][Piehler:2005ev]. In that sense, Fluorescence resonance Energy Transfer (FRET), takes advantage of the modification in the spectral activity occurred when 2 fluorophores are close to each other[#Yan:2010fu]. Another methods as Surface Plasmon Resonance (SPR), has shown effective without spectroscopic labeling detecting interactions between soluble ligands and immobilized receptors[#Karlsson:2004di][Cooper:2003bd]. Isothermal Titration Calorimetry (ITC) allows to measure the enthalpy of binding[#VelazquezCampoy:2005ck]. Another methods can accurately analyze single molecules measuring the microscopic forces that bind the interacting proteins, as atomic force microscopy[#Yang:2003uk]; or detecting conformational changes as some fluorescence technics[#Margittai:2003ht]. 
+
+Nevertheless, during the last years a set of methodologies emerged to exhaustively probe all the potential interactions within entire genomes.</Text>
+            <Notes>Monitoring specific protein interactions. The most detailed information about protein interaction interfaces at the atomic level can be provided by X-ray crystallography and NMR spectroscopy, but the number of solved protein complexes remains low [84]. At the same time, the real-time characterization of interacting proteins in vivo can be achieved with various spectroscopic techniques requiring the attachment of a spectroscopic label to a target protein [87,88] (Table 1). A powerful technique in this respect is fluorescence resonance energy transfer (FRET), which can occur only if two fluorophores are located close to each other [89]. Another effective method, surface plasmon resonance (SPR), does not require spectroscopic labeling and can detect interactions between soluble ligands and immobilized receptors [90,91]; while the isothermal titration calorimetry (ITC) technique allows for direct measurement of the enthalpy of binding [92]. Recently, new methods have been developed to analyze protein interactions at the single- molecule level. For example, atomic force microscopy can fairly accurately measure interaction forces ([93]) while fluorescence techniques can characterize conformational changes in proteins upon binding [94].
+</Notes>
+        </Document>
+        <Document ID="31">
+            <Title>Computational methods</Title>
+        </Document>
+        <Document ID="14">
+            <Title>High throughput studies</Title>
+        </Document>
+        <Document ID="40">
+            <Title>Similarity of phylogenetic trees</Title>
+        </Document>
+        <Document ID="32">
+            <Title>Interologs</Title>
+            <Notes>Interaction maps obtained for one species can be used to predict interaction networks in other species, to identify functions of unknown proteins, and to get insight into the evolution of protein interaction patterns. The interaction map analyses and comparisons are based on the observation that many interactions are conserved among species (‘‘interologs’’) [46]. Sequence-based searches for ‘‘interologs’’ were able to identify 16%–31% of true ‘‘interologs’’ (tested using Y2H system) even between remotely related species such as yeast and worm [96]. Analysis of conservation in the networks produced by gene co-expression data revealed that interologs correspond to the functionally related genes responsible for core biological processes [77]. Moreover, a multiple-species network has been constructed by identifying pairs of genes with correlated expression in different organisms. A multiple-species network has shown to perform better than a single-species network in linking together functionally related genes.
+</Notes>
+        </Document>
+        <Document ID="15">
+            <Title>Limitations of experimental methods</Title>
+            <Text>Several comprehensive protein-protein interaction studies have been performed using high-throughput experiments mostly using TAP-MS and Y2H. Interaction maps have been described in *Helicobacter pylori*[#Rain:2001ve], *Escherichia coli*[#Butland:2005in], *Saccharomyces cerevisiae*[#Ito:2000ly][Uetz:2000db][Schwikowski:2000bu][Gavin:2002dm][Ho:2002dn], *Caenorhabditis elegans*[#Walhout:2001gi][Simonis:2009va], *Drosophila melanogaster*[#Giot:2003fy] and *Homo sapiens*[#Rual:2005it][Stelzl:2005ht]. 
+
+However, the reproducibility of this analysis is one of the main drawbacks in the large scale study of protein interactions . For instance, the first two genome-wide analysis performed in yeast revealed 692 and 841 putative interactions, respectively[#Uetz:2000db][Ito:2000ly]. Nevertheless, the overlapping between both sets was about 20% of the interactions[#Ito:2000ly]. Some authors estimated a false-negative rate of 90% and a false-positive rate of 50% for these datasets[#vonMering:2002kg][Sprinzak:2003ur]. 
+
+The reason of these particularly poor numbers could be partially explained by the unstable nature of many interactions. In spite of that, the inherent experimental biases of the most used technics needs to be addressed. Y2H and TAP-MS , for instance, generate a lot of false positives and miss a lot of known interactions. Y2H has the advantage of being an *in vivo* technique which is able to accurately predict interactions without a prior knowledge of the complex. However, their results are bias towards nonspecific interactions and additional methodological limitations need to be considered[#Deeds:2006ia]. In fact, not any protein can be targeted since proteins initiating transcription by themselves produce false positives. Besides, the structural effect of expressing sequence chimeras might be particularly awkward as fusion can change the structure of the target protein. In addition, the experimentalist needs to be aware that, protein folding and post-translational modifications are not necessarily conserved between the organism of interest and yeast. On the other hand, even though TAP-MS can report indirectly bound proteins in order to yield protein complexes, the contamination of the target is a frequent disadvantage especially if we don’t have prior knowledge of the system. Therefore, the majority of the experimental evidences cannot distinguish between direct interactions and those mediated by at least one intermediate protein[#Edwards:2002vt].
+
+All the discrepancies found in the published datasets together with the technical issues invite to be cautious when interpreting results from high-throughput studies. Accuracy can be increased by combining data sets[#Bader:2002iq][vonMering:2002kg][Yu:2008ce], by repeated screening[#Venkatesan:2009jo] and confidence evaluation[#Yu:2008ce], and by comparing data sets from different species.
+
+</Text>
+        </Document>
+        <Document ID="41">
+            <Title>mt-tsema</Title>
+        </Document>
         <Document ID="24">
             <Title>Yeast two-hybrid</Title>
             <Text>
@@ -133,6 +75,136 @@ The initial setup has been adapted to screen entire genomes in two different app
 *	Matrix approach. A matrix of prey clones and mated bait strains is created using distinguishable well plates. Those wells showing interacting chimeric proteins are selected based on the expression of a reporter gene.
 
 *	Library approach. The library may consist of random cDNA fragments or open reading frames representing the proteins expressed in a particular organisms or tissue. Positive interactors are usually selected based on their ability to grow in specific substrates.</Text>
+        </Document>
+        <Document ID="50">
+            <Title>Biomolecular Interaction Network Database</Title>
+            <Notes>Biomolecular Interaction Network Database. The Biomolecular Interaction Network Database (BIND) includes high-throughput experimental datasets and protein complexes from PDB [105,106]. It contains a variety of curated experimental data. A generalized data specification handles not only various types of protein interaction data, but also protein–small molecule interactions and protein– nucleic acid interactions. An interaction viewer is provided to browse the interaction space. BIND also can distinguish different functional types of interactions.
+</Notes>
+        </Document>
+        <Document ID="33">
+            <Title>Interactomes</Title>
+            <Notes>The fast development of experimental techniques for protein interactions has enabled the construction and systematic analysis of interaction networks [1,2,95]. </Notes>
+        </Document>
+        <Document ID="16">
+            <Title>Systems Biology and Biological Networks</Title>
+            <Text>
+The Systems Biology relies on the study of mentioned complex interactions within biological systems. Contrary to the more traditional reductionism, this discipline approaches the biological problems from a holistic point of view. Indeed, the reductionism  has been extremely successful explaining many areas of the Biology but, for many reasons, the integration of data is necessary to solve problems that can not be understand as the sum of the parts.
+
+The change in the paradigm together with different high-throughput technics give birth to what is known as the Omics era. Genomics, Proteomics or Metabolomics are just a few of the many research areas emerged during the last decade producing massive amounts of data. Therefore, new methodologies and infrastructures previously applied to other scientific areas appeared to solve biomedical problems. One of this new areas is the study of biological networks.
+</Text>
+        </Document>
+        <Document ID="42">
+            <Title>mirrortree</Title>
+        </Document>
+        <Document ID="25">
+            <Title>Affinity purification/mass spectrometric identification</Title>
+            <Text>Tandem Affinity Purification (TAP) usually combined with Mass Spectrometry (MS) technics is a powerful methodology to identify protein-protein interactions and especially protein complexes. The TAP method involves the fusion of the target protein C-terminus with the TAP tag. This TAP Tag is a multi-domain chimeric protein containing calmodulin binding peptide (CBP) in the N-terminal, followed by the tobacco etch virus protease (TEV protease) cleavage site and Protein A which binds tightly with IgG[#Rigaut:1999jv][Puig:2001hz]. The engineered protein is expressed in the host cell where it can form native complexes with other proteins.
+
+The target protein and the interacting proteins are isolated using a two step purification process. First, the protein tightly binds to beads coated with IgG; and after washing out the contaminants, the TEV protease cuts the cleavage site. The elute of this first step is then adsorbed in a calmodulin-coated beads in the presence of calcium. After washing, the target protein complex is released using ethylene glycol tetraactetic acid (EGTA).
+
+The elution, containing the target protein and the interacting partners, are screened by polyacrylamide gel electrophoresis, cleaved by proteases and the fragments identified by MS. The basis of MS is to produce ions that can be identified based on their mass-to-charge ratios[#Causier:2004cq][DiTullio:2005bu][Aebersold:2003fn]. MS works by ionizing the peptides to produce charged molecules in the gas phase that could be analyzed and detected using electromagnetic fields[#Whitehouse:1985tc][Pieles:1993vn][Karas:1988vn]. Different algorithms implements the identification of the resulting mass spectra[#Yates:1995ww][Taylor:1997iw][Pevzner:2000ed][Geer:2004kv]. Despite we can find different variants of MS applied to the characterization of protein-protein interactions, purification of protein complexes still remains as the bottleneck of the process. </Text>
+        </Document>
+        <Document ID="51">
+            <Title>Munich MPact/MIPS database</Title>
+            <Notes>Munich MPact/MIPS database. MPact is a resource to access MIPS, which contains a manually curated yeast protein interaction dataset [97] collected by curators from the literature. The resource also includes high-throughput results for yeast, but keeps this data separate. MIPS is often used as a standard of truth database for evaluating the quality of data and the accuracy of interaction prediction methods.
+</Notes>
+        </Document>
+        <Document ID="9">
+            <Title>Introduction</Title>
+            <Text>
+The outcome of most biological processes can hardly be understood without the comprehensive analysis of large number of components and interactions. From the most simple systems in the minimal organisms to the mammal complex machineries, the relationship between different molecules usually determines the resulting phenotype. Focusing on cellular proteins, they rarely work in isolation but are frequently involved in pathways and interaction networks. The eventual perturbation of this networks normally implicates disease or even death, so an elucidation of protein-protein interactions can greatly contribute to our understanding of pathological states.
+</Text>
+        </Document>
+        <Document ID="60">
+            <Title>Context-based approaches</Title>
+        </Document>
+        <Document ID="43">
+            <Title>Supervised</Title>
+        </Document>
+        <Document ID="26">
+            <Title>Synthetic lethality</Title>
+            <Text>Synthetic lethality is a very common type of *in vivo* genetic screening which tries to understand the mechanisms that allows phenotypic stability despite genetic variation, environmental changes and random events such as mutations. This methodology produces mutations or deletions in two or more genes which are viable alone but cause lethality when combined together under certain conditions[#Rutherford:2000hg][Hartman:2001ty][Bender:1991vh][Ooi:2006gp][Brown:2006ft]. A screening of this genetic dependencies can point to possible physical interactions between proteins, their participation in the same biochemical process or a similar function.</Text>
+            <Notes>Synthetic lethality method. It is not very well-understood how genetic variation influences phenotype and how genes interact with each other producing different phenotypes in different strains of the same species [77,78]. These problems can be addressed by using various genetic interaction methods, the most common of which is the synthetic lethality method (Figure 1F). The synthetic lethality method produces mutations or deletions of two separate genes which are viable alone but cause lethality when combined together in a cell under certain conditions [78–83]. Since these mutations are lethal, they cannot be isolated directly and should be synthetically constructed. Synthetic interaction can point to the possible physical interaction between two gene products, their participation in a single pathway, or a similar function. For example, synthetic lethality experiments enabled the prediction of the unknown function of the YLL049W gene as belonging to the dynein–dynactin pathway, and the bridging together of the two pathways of the parallel mitotic exit network and the Cdc14 early anaphase release pathway [83].
+______________________________
+Synthetic lethality arises when a combination of mutations in two or more genes leads to cell death, whereas a mutation in only one of these genes does not, and by itself is said to be viable[1] In a synthetic lethal genetic screen, it is necessary to begin with a mutation that does not kill the cell, although may confer a phenotype (for example, slow growth), and then systematically test other mutations at additional loci to determine which confer lethality.
+The importance of synthetic lethality as a type of genetic screen is reflected in the tendency of organisms to maintain buffering schemes that allows phenotypic stability despite genetic variation, environmental changes and random events such as mutations. Synthetic lethality can help identify these buffering relationships, and what type of disease or malfunction that may occur when these relationships break down, through the identification of gene interactions that function in either the same biochemical process or pathways that appear to be unrelated.[2] By exploring these relationships, a synthetic lethal screen may help illuminate questions about how cellular processes work when the protein products expressed by two different genes have an effect together but not separately.
+Synthetic lethality may be explored in a variety of model organisms, including Drosophila melanogaster and Saccharomyces cerevisiae. Since synthetic lethal mutations are inherently inviable, common approaches are to employ temperature sensitive mutations or put mutations under the control of a regulated promoter to allow exploration of the phenotype without leading to death.[3]
+[edit]
+</Notes>
+        </Document>
+        <Document ID="52">
+            <Title>Intact</Title>
+        </Document>
+        <Document ID="35">
+            <Title>Computational methods</Title>
+            <Text>The described limitations of the experimental technics call for the development of new approaches to predict wether two proteins interact. The interacting partners usually share some structural, physico-chemical or evolutionary constraints as consequence of their interaction. Therefore, several computational algorithms raised based on different descriptors in order to predict interactions at small or large scale. While some methods are based on structural features of the candidates, others may take advantage of the increasing genomic information available[#Shoemaker:2007gg]. The latter, known as *genome context* methods, can provide additional evidences on candidate interactions, as well as some insight on evolutionary events governing them.</Text>
+        </Document>
+        <Document ID="61">
+            <Title>Open problems</Title>
+        </Document>
+        <Document ID="44">
+            <Title>Interologs</Title>
+        </Document>
+        <Document ID="27">
+            <Title>P</Title>
+        </Document>
+        <Document ID="53">
+            <Title>Behind mirrortree</Title>
+        </Document>
+        <Document ID="36">
+            <Title>Gene fusion events</Title>
+            <Text>Also known as Rosetta Stone, the approach is based on the observation that some interacting proteins have homologs in other genomes that are fused in one polypeptide chain[#Enright:1999dn][Marcotte:1999eu]. For instance, alpha and beta subunits of tryptophan synthetase are fused in fungi but exist as separate chains in bacteria[#Burns:1990wg]. Gene fusion apparently occurs to optimize co-regulation synching the relative concentration of both species. In fact, analysis of pairs predicted by this approach revealed that for more than half of the pairs both members were functionally related[#Marcotte:1999xe]. It has also been shown that the events are particularly more frequent in metabolic proteins[#Tsoka:2000fi]. 
+
+The algorithms to detect such kind of events usually imply recursive sequence searches and multiple sequence alignments (MSAs). More recent modifications have included statistical measures to detect these *gene fusion* events focusing on all homologues rather than restricting the analysis to the orthologues[#Marcotte:2002ty].
+
+The main limitation of this methodology relies on the prevalence of fused proteins. Since the approach is restricted to shared domains in distinct proteins, what is the true extent of this phenomenon remains unclear[#Sprinzak:2001dc]. </Text>
+            <Notes>why
+Gene fusion apparently occurs to optimize co-expression of genes encoding for interacting proteins.
+More recent approaches have included statistical measures70 to detect these ‘gene fusion’ events and have focused on all homologues of fused and non­ fused proteins to improve the predictive coverage, rather than restricting the analysis to orthologues.
+ It has also been shown that fusion events are particularly common in metabolic proteins [20]. By definition, this approach is restricted to shared domains in distinct proteins, a phenomenon whose true extent is still unclear [21], especially in prokaryotic organisms.
+
+</Notes>
+        </Document>
+        <Document ID="62">
+            <Title>Inheritance through homology</Title>
+            <Notes>Inheritance through homology. Protein interactions can be predicted through inheritance from proteins with known interactions, derived from various experimental approaches. MIPS59 contains a manually curated yeast protein­interaction dataset and is often regarded as the gold standard of protein­interaction databases. Other accessible databases include DIP, IntAct, MInT, bInD, STrInG, SCOPPI, SnAPPI­Db, iPfam, PSIMAP, PIbASE and 3did (see Supplementary information S1 (table) for descriptions). STrInG60 uses the COG database to automatically transfer associations to orthologous pro­ tein pairs in other organisms. reconstruction of whole metabolic pathways and networks is also supported by several resources such as KEGG, MetaCyc, IMG and PuMA2. TrAnSPATH61 specializes in signalling
+</Notes>
+        </Document>
+        <Document ID="45">
+            <Title>mt and pp supervised variants</Title>
+        </Document>
+        <Document ID="28">
+            <Title>Protein Interaction Databases</Title>
+        </Document>
+        <Document ID="54">
+            <Title>Coevolution</Title>
+        </Document>
+        <Document ID="37">
+            <Title>Gene neighbor and gene cluster methods</Title>
+            <Text>Functionally related genes encoding for potentially interacting proteins are frequently transcribed together as a simple unit, operons in bacteria and co-regulated clusters in eukaryotes. Gene neighbor methods use these adjacency relationships as a proxy to infer interacting proteins. Despite the effect of neutral evolution which tends to shuffle genes, gene order is usually conserved in gene clusters and operons[#Dandekar:1998rw][Overbeek:1999rc] and predicts functional interactions with higher coverage (about 37%) and precision (63-75%) than prior genomic inference methods[#Huynen:2000fv]. To some extent, this approach can be applied to eukaryotes in which interacting co-regulated genes are often found to cluster in the genome[#Teichmann:2004cz].
+
+Successful examples of gene neighborhood have been reported. By comparing gene order in archeal and eukaryotic genomes, exosome superoperon revealed the interaction with two subunits of RNase P, a linkage validated experimentally that was not reported earlier [#Koonin:2001hu][EvguenievaHackenberg:2003kl].  
+
+</Text>
+        </Document>
+        <Document ID="17">
+            <Title>Biological Networks</Title>
+            <Text>
+The study of interactions between the components of biological systems and how these interactions give rise the function and behavior of that process has been frequently modeled using networks[#Strogatz:2001fp]. Many systems take the form of networks when the entities are represented as nodes and their relationships as the connecting edges. This schema previously applied to social networks[#Wasserman:1994tg][Scott:2000wq][Watts:1998pd], food webs[#Williams:2000jc] or the World Wide Web[#Broder:2000bx] brings another analytical view of the complex relationships at molecular level.
+
+In the same way the structure of the power supply network affects the robustness and stability of power transmission, the architecture of biological networks informs about the characteristics of the systems under study. Surprisingly, a few common principles governs the topology of the real networks: 
+
+*	*Scale free*: most of the nodes have only a few interactions, and these coexist with a few highly connected nodes, the hubs, that hold the whole network together. Hence, the number of nodes with a given degree follows a power law distribution[#Barabasi:1999bh]. This scale free property has been reported in organisms for which protein-protein interaction and metabolic network exists, from yeast to human[#Barabasi:2004rm].
+
+*	*Small world*: any random pair of nodes can be easily connected with a path of relatively small number of links[#Milgram:1967vm]. This general trend is supported by evidences showing wether the metabolic network of a parasitic bacterium has the same average path length as the highly developed network of a large multi-cellular organism[#Jeong:2000ly]. That property indicates that any local perturbation can reach the whole network very quickly.
+
+*	*Transitivity*: this graph theory concept is fulfilled when the network is much more highly clustered than a random graph, in the sense that if *A* is linked to *B* and *B* is linked to *C*, there is a greatly increased probability that *A* will also be linked to *C*. Therefore, networks are usually enriched in subgraphs of highly inter-connected groups frequently involved in a common function[#Milo:2002cg].
+
+It’s impossible to ignore the apparent universality of topological characteristics in real networks including biological. Wether to use this concepts to explore the dynamics, evolution or robustness is still an area of research but many successful cases came out during the last few years. However, the relationships between the molecular entities are often hard to describe. Interactions can be conditional or contextual, and may not always be captured in a given study, regardless of its attention to quality. The modeling of accurate networks remains challenging in different areas as in the protein-protein interaction networks. 
+</Text>
+        </Document>
+        <Document ID="46">
+            <Title>???topology based</Title>
         </Document>
         <Document ID="29">
             <Title>Phage display</Title>
@@ -147,11 +219,83 @@ Antibody libraries displaying millions of different antibodies on phage are ofte
 Competing methods for in vitro protein evolution are yeast display, bacterial display, ribosome display, and mRNA display.
 </Notes>
         </Document>
-        <Document ID="14">
-            <Title>High throughput studies</Title>
+        <Document ID="55">
+            <Title>network-level</Title>
         </Document>
-        <Document ID="31">
-            <Title>Computational methods</Title>
+        <Document ID="38">
+            <Title>Phylogenetic profile methods</Title>
+            <Text>The phylogenetic profiles (PP) method is based on the hypothesis that functionally associated and potentially interacting proteins co-evolve in the way they are likely to be inherited or eliminated in a codependent manner. One hypothesis explains this presence/absence pattern as “reductive evolution”. If the cooperative interaction of both proteins determines the function of the system and one of the proteins is lost, the evolutionary pressure to maintain the other protein disappears. Likewise, if a protein is recruited, the interacting partner needs to be “acquired” in order to be functional. The underlying idea is that many complexes or pathways require all their members in order to fulfill their function. These events are compatible with the idea of the “selfish operon” in which a cohort of genes are subject of horizontal gene transfer[#Lawrence:1996wj].
+
+A phylogenetic profile is constructed for each protein as a vector representing its presence/absence in a set of genomes. Originally, the vectors were encoded as binary where “1” denotes presence and “0” absence in a qualitative way[#Gaasterland:1998va][Pellegrini:1999eu][Marcotte:1999eu]. Nevertheless, the binary representation is a simplistic way to encode the evolutionary events of a protein in a profile. Therefore, the similarity of the sequences with a reference organism was incorporated at each position in order to enrich the vectors with quantitative data[#Date:2003zl]. Phylogenetic profiles constructed at domain level[#Pagel:2004ky][Ranea:2004dh] or using phenotypic traits[#Levesque:2003uv][Gonzalez:2008jq] has also been used in both qualitative or quantitative ways. Once the profiles are defined, multiple measures of similarity has been used including euclidean distance[#Marcotte:1999eu], mutual information[#Date:2003zl] or Hammings distance[#Wu:2003vs]. 
+
+Several evidences demonstrated wether proteins with similar phylogenetic profiles are functionally related. For instance, homologs of *E. Coli* ribosomal protein RL7 were found in most of eubacterial genomes and in yeast but not in archeal genomes. The same pattern can be found in many ribosomal proteins functionally related to RL7[#Pellegrini:1999eu]. Other examples of correlated profiles include flagellar proteins and proteins involved in amino-acid metabolism[#Pellegrini:1999eu].
+
+The performance of the method has been demonstrated to be strongly affected by the set of organisms selected to build the profiles. As more and more completely sequenced genomes become available, more evident is the fact that the best predictor not necessary requires all the available data[#Sun:2007eq]. Indeed, depending on the type of functional relationship we are trying to detect, the optimal set of organisms may change. Organisms in the three superkingdoms have been proposed as adequate for conserved interactions (e.g. translation  apparatus), whereas species in the same superkingdom are more accurate for more variable pathways as carbohydrate metabolism[#Jothi:2006de]. Comprehensive studies recently analyzed the effect of reference taxa with 565 bacteria suggesting to sample organisms in order to achieve better performances[#Muley:2012cq]. Since the manual selection of reference set could be arbitrary, machine-learning algorithms has been developed reaching higher accuracies even in eukaryotes[#Simonsen:2012ee].
+
+The applications of phylogenetic profiles can also be extended establishing the linkage between 2 proteins when their profiles are anti-correlated in the way they represent the negation of each other[#Morett:2003kf]. This assumption that relationships between functionally related phylogenetic profiles can be explained using logic operators, was more recently exploited using triplets of profiles in order to look for higher order relationships as complementation[#Bowers:2004df].
+
+Using the mentioned methodology, the presence/absence of every gene is equally weighted, independently of the number of causing evolutionary events. The identification of gain/loss events combining phylogenetic trees with phylogenetic profiles, allows the estimation of profile similarity likelihoods. Different implementations of this approach introduce Markov models[#Barker:2005be][Cohen:2012hn], kernel trees[#Vert:2002vo] or explicit comparison[#Zhou:2006ic]. All previous approaches have not considered the fact that gene clusters may strongly coevolve in some parts of the evolutionary tree while exhibiting a very weak signal in other periods. This asymmetry on the coevolutionary signal called *Local Coevolutionary* problem has been subject of different studies but remains a computationally challenging task[#Kim:2006cg][Tuller:2010ii]. 
+
+In spite of the fact that phylogenetic profiles show in the last decade as a powerful and intuitive methodology, some disadvantages need to be addressed. Despite the previously mentioned limitations, one of the most important problems relies on the construction of accurate profiles. Since the profiles are usually designed using orthology relationships, it can only be applied to complete and well annotated genomes to be sure of the absence of a given gene. Even on those cases, the orthology assignment is not trivial. Moreover, essential proteins or those specific for a given genome, behave as hard candidates since they are encoded as flat profiles.
+
+At the practical level, automatically generated phylogenetic profiles are available in several resources as STRING[#Mering:2003hp], Prolinks[#Bowers:2004df] or ECID[#AndresLeon:2009fm].</Text>
+        </Document>
+        <Document ID="63">
+            <Title>Computational evidences Databases</Title>
+        </Document>
+        <Document ID="47">
+            <Title>Combination of methods</Title>
+        </Document>
+        <Document ID="56">
+            <Title>TF-BS</Title>
+        </Document>
+        <Document ID="39">
+            <Title>Based on residue coevolution (ver NRG)</Title>
+        </Document>
+        <Document ID="48">
+            <Title>Protein Interaction Databases</Title>
+            <Text>Several repositories of protein-protein interactions are publicly available to provide access to experimental evidences. While in some databases interactions are directly submitted by experimentalist; in others, the interacting proteins are obtained by mining the literature or functional associations. Wether these evidences are curated manually or by automated algorithms, also depends on the database[ppidatabases]. The information regarding the interaction could also vary depending on the resource, so efforts to standardize the annotations are ongoing[#Hermjakob:2004fz]. Indeed, different experimental technics provide complementary information. Y2H for instance, gives the identity of interacting proteins, electron microscopy provides relative positional information of the proteins, and crystallography provides full atomic detail of interaction surfaces. In spite of the variability of the stored data, a large overlapping exists in the contained information. In the future, further development and curation of interaction databases will be necessary.
+
+Databases	 |   Experimental | Structural | Functional | Manual Curation | Species Specific | References         
+ :———————— | :—————————: | :——————: |  :————:| :————:|:————:|:————:|
+DIP, LiveDIP	| &lt;!--\cmark--> | &lt;!--\cmark--> | &lt;!--\xmark--> | &lt;!--\xmark--> | &lt;!--\xmark--> |  [#Xenarios:2002kx][Duan:2002wg]
+BIND		| &lt;!--\cmark--> | &lt;!--\cmark--> | &lt;!--\xmark--> | &lt;!--\cmark--> | &lt;!--\xmark--> | [#Bader:2001yq] 
+Intact		| &lt;!--\cmark--> | &lt;!--\xmark--> | &lt;!--\xmark--> | &lt;!--\cmark--> | &lt;!--\xmark--> |  [#Kerrien:2007vn] 
+BioGRID	| &lt;!--\cmark--> | &lt;!--\xmark--> | &lt;!--\xmark--> | &lt;!--\cmark--> | &lt;!--\cmark--> |  [#Stark:2006ev]  
+MIPS/MPact	| &lt;!--\cmark--> | &lt;!--\xmark--> | &lt;!--\cmark--> | &lt;!--\cmark--> | &lt;!--\cmark--> |  [#Mewes:2011ek][Guldener:2006do]
+MPIDB		|&lt;!--\cmark--> | &lt;!--\cmark--> | &lt;!--\cmark--> | &lt;!--\cmark--> | &lt;!--\xmark--> |   [#Goll:2008hp]
+HPRD		|  &lt;!--\cmark--> | &lt;!--\xmark--> | &lt;!--\xmark--> | &lt;!--\cmark--> | &lt;!--\cmark--> |  [#Peri:2003eg]  
+STRING	| &lt;!--\cmark--> | &lt;!--\xmark--> | &lt;!--\cmark--> | &lt;!--\xmark--> | &lt;!--\xmark--> |  [#Mering:2003hp]  
+ProtCom		| &lt;!--\xmark--> | &lt;!--\cmark--> | &lt;!--\xmark--> | &lt;!--\xmark--> | &lt;!--\xmark--> |  [#Kundrotas:2007hn]  
+Prolinks		| &lt;!--\xmark--> | &lt;!--\xmark--> | &lt;!--\cmark--> | &lt;!--\xmark--> | &lt;!--\xmark--> |  [#Bowers:2004df] 
+ECID		| &lt;!--\xmark--> | &lt;!--\xmark--> | &lt;!--\cmark--> | &lt;!--\xmark--> | &lt;!--\cmark--> |  [#AndresLeon:2009fm]
+[PPI Databases]
+</Text>
+            <Notes>Further development of interaction databases is crucial for standardization of the interaction datasets and data- exchange formats, as well as for the integration of the databases with other bioinformatics resources.
+______________
+In addition to direct detection of physical protein interactions, indirect methods can be used to predict the functional association between proteins or to predict the location of the interaction interface itself. There is indeed a wide range of detail characterizing the interactions available from different databases. For example, Y2H data gives the identity of interacting proteins, electron microscopy provides relative positional information of interacting proteins, and crystallography provides full atomic detail of interaction surfaces. In addition, interacting proteins can be studied either as complete units or by domains used as the units of interaction. Consequently, in this review we group all databases into protein and domain-related databases.
+In spite of the interaction data diversity, there exist considerable overlaps in the datasets contained in the databases, making it difficult to recommend a single resource for a particular type of information. In one effort to deal with this redundancy, the International Molecular Exchange Consortium (IMEx) has been formed in which databases agree to share their data in a consistent and timely fashion (Table 2). In addition, a standard data model has been proposed for the representation and exchange of protein interaction data [101]. A few example databases from Table 2 will now be highlighted to illustrate different types of interaction data available.
+_____________________________
+The past 5 years has seen significant efforts towards obtaining comprehensive protein interaction maps. High-throughput yeast two-hybrid maps for humans have been generated by several groups2,9,10,122, yielding more than 7,000 binary interactions. The immunoprecipitation and high-throughput mass spectrometry technique, which identifies co-complexes, is now being applied to humans as well123. There have also been major efforts to curate the interactions that have been validated individually in the literature into databases124 such as the Münich Information Center for Protein Sequence (MIPS) protein interaction database, the Biomolecular Interaction Network Database (BIND), the Database of Interacting Proteins (DIP), the Molecular Interaction database (MINT), and the protein Interaction database (IntAct). 
+More recent protein–protein interaction curation efforts, including the Biological General Repository for Interaction Datasets (BioGRID) and the Human Protein Reference Database (HPRD), have attempted larger-scale curation of data. Additionally, the STRING database contains known and predicted protein–protein interactions. Despite these extensive curation efforts, the existing maps are considered incomplete2, and the literature-based data sets, although richer in interactions, are prone to investigative biases25 as they contain more interactions for the more explored disease proteins41.
+
+</Notes>
+        </Document>
+        <Document ID="57">
+            <Title>Correction by species tree</Title>
+            <Text>One of the problems of the mirror tree method is the large num- ber of false positives in the prediction. Even protein pairs that are known not to interact often show high correlation coefficients. The abundance of false positives in the mirror tree prediction reduces the reliability of the method in actual applications. The distance matrices of orthologous proteins from the same set of n source organisms are compared in the mirror tree method. Therefore, all of the distance matrices of the proteins are considered to include the information about the phylogenetic relationships among the same n sources, to some extent. The phylogenetic relationships among the identical set of sources behind the distance matrices would be the cause for such a high correlation between non-interacting proteins. If we can exclude
+the information about the phylogenetic relationships from the dis- tance matrices then the performance of the mirror tree method may be improved.</Text>
+        </Document>
+        <Document ID="49">
+            <Title>Database of Interacting Proteins</Title>
+            <Notes>Database of Interacting Proteins. The Database of Interacting Proteins (DIP) contains experimentally determined protein interactions and includes a core subset of interactions that have passed a quality assessment [102]. Interaction data are obtained from the literature; PDB; and high-throughput methods such as Y2H, DNA and protein microarrays; and TAP–MS analysis of protein complexes. Several methods are employed to assess the quality of interaction data and are offered as a service for query interactions. DIP has links to a couple of related databases including LiveDIP, which records information about the state of a biological interaction, such as covalently modified, conformational, or cellular location states [103]. Another database related to DIP is Prolinks, which brings together four methods of linking proteins: phylogenetic profiles, Rosetta Stone, gene neighbors, and gene clusters[104]. The database includes a Proteome Navigator tool to browse the linkages and view accompanying data.
+</Notes>
+        </Document>
+        <Document ID="58">
+            <Title>Structural features</Title>
+        </Document>
+        <Document ID="59">
+            <Title>Selection of reference taxa</Title>
         </Document>
     </Documents>
 </SearchIndexes>

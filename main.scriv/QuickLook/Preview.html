@@ -39,7 +39,7 @@ The outcome of most biological processes can hardly be understood without the co
 <hr/>
 <ul>
 <li>
-<p class="binderItem"><strong>Systems Biology and Protein-Protein Interactions</strong><br/><br/>
+<p class="binderItem"><strong>Systems Biology and Biological Networks</strong><br/><br/>
 The Systems Biology relies on the study of mentioned complex interactions within biological systems. Contrary to the more traditional reductionism, this discipline approaches the biological problems from a holistic point of view. Indeed, the reductionism  has been extremely successful explaining many areas of the Biology but, for many reasons, the integration of data is necessary to solve problems that can not be understand as the sum of the parts.<br/>
 <br/>
 The change in the paradigm together with diff...</p>
@@ -50,10 +50,14 @@ The change in the paradigm together with diff...</p>
 <p class="binderItem"><strong>Biological Networks</strong><br/><br/>
 The study of interactions between the components of biological systems and how these interactions give rise the function and behavior of that process has been frequently modeled using networks[#Strogatz:2001fp]. Many systems take the form of networks when the entities are represented as nodes and their relationships as the connecting edges. This schema previously applied to social networks[#Wasserman:1994tg][Scott:2000wq][Watts:1998pd], food webs[#Williams:2000jc] or the World Wide Web[#Broder:...</p>
 </li>
+</ul>
+<hr/>
 <li>
 <p class="binderItem"><strong>Protein-Protein Interactions</strong><br/><br/>
 Protein-Protein Interactions (PPIs) are the result of a physical binding between two or more proteins to accomplish a biological function. They can be classified into different types depending on their strength (permanent and transient), specificity (specific or nonspecific), the location of interacting partners within one or on two polypeptide chains, and the similarity between interacting subunits (homo- and hetero-oligomers). Protein interactions are necessary to achieve many cellular proces...</p>
 </li>
+<hr/>
+<ul>
 <li>
 <p class="binderItem"><strong>Experimental Determination of PPIs</strong><br/><br/>
 The instability and heterogeneity of PPIs make their detection extremely sensible to the experimental setup. Different methods raised to screen interactions in order to capture their heterogenous nature.<br/>
@@ -81,22 +85,81 @@ One of the most successful techniques accelerating the screening of interactions
 </ul>
 <hr/>
 <li>
-<p class="binderItem"><strong>Protein Interaction Databases</strong></p>
+<p class="binderItem"><strong>Limitations of experimental methods</strong><br/>Several comprehensive protein-protein interaction studies have been performed using high-throughput experiments mostly using TAP-MS and Y2H. Interaction maps have been described in *Helicobacter pylori*[#Rain:2001ve], *Escherichia coli*[#Butland:2005in], *Saccharomyces cerevisiae*[#Ito:2000ly][Uetz:2000db][Schwikowski:2000bu][Gavin:2002dm][Ho:2002dn], *Caenorhabditis elegans*[#Walhout:2001gi][Simonis:2009va], *Drosophila melanogaster*[#Giot:2003fy] and *Homo sapiens*[#Rual:2005it][Stelzl:2005ht]...</p>
 </li>
 <li>
-<p class="binderItem"><strong>Modelling interactomes</strong><br/>Several large-scale protein-protein interaction studies have been performed using high-throughput experiments mostly using TAP-MS and Y2H. Interaction maps have been described in *Helicobacter pylori*[#Rain:2001ve], *Escherichia coli*[#Butland:2005in], *Saccharomyces cerevisiae*[#Ito:2000ly][Uetz:2000db][Schwikowski:2000bu][Gavin:2002dm][Ho:2002dn], *Caenorhabditis elegans*[#Walhout:2001gi][Simonis:2009va], *Drosophila melanogaster*[#Giot:2003fy] and *Homo sapiens*[#Rual:2005it][Stelzl:2005ht]. ...</p>
+<p class="binderItem"><strong>Protein Interaction Databases</strong><br/>Several repositories of protein-protein interactions are publicly available to provide access to experimental evidences. While in some databases interactions are directly submitted by experimentalist; in others, the interacting proteins are obtained by mining the literature or functional associations. Wether these evidences are curated manually or by automated algorithms, also depends on the database[ppidatabases]. The information regarding the interaction could also vary depending on the resour...</p>
+</li>
+<li>
+<p class="binderItem"><strong>Computational methods</strong><br/>The described limitations of the experimental technics call for the development of new approaches to predict wether two proteins interact. The interacting partners usually share some structural, physico-chemical or evolutionary constraints as consequence of their interaction. Therefore, several computational algorithms raised based on different descriptors in order to predict interactions at small or large scale. While some methods are based on structural features of the candidates, others may t...</p>
+</li>
+<hr/>
+<ul>
+<li>
+<p class="binderItem"><strong>Gene fusion events</strong><br/>Also known as Rosetta Stone, the approach is based on the observation that some interacting proteins have homologs in other genomes that are fused in one polypeptide chain[#Enright:1999dn][Marcotte:1999eu]. For instance, alpha and beta subunits of tryptophan synthetase are fused in fungi but exist as separate chains in bacteria[#Burns:1990wg]. Gene fusion apparently occurs to optimize co-regulation synching the relative concentration of both species. In fact, analysis of pairs predicted by this ...</p>
+</li>
+<li>
+<p class="binderItem"><strong>Gene neighbor and gene cluster methods</strong><br/>Functionally related genes encoding for potentially interacting proteins are frequently transcribed together as a simple unit, operons in bacteria and co-regulated clusters in eukaryotes. Gene neighbor methods use these adjacency relationships as a proxy to infer interacting proteins. Despite the effect of neutral evolution which tends to shuffle genes, gene order is usually conserved in gene clusters and operons[#Dandekar:1998rw][Overbeek:1999rc] and predicts functional interactions with higher...</p>
+</li>
+<li>
+<p class="binderItem"><strong>Similarity of Phylogenetic Profiles</strong><br/>The phylogenetic profiles (PP) related methods are based on the hypothesis that functionally associated and potentially interacting proteins co-evolve in the way they are likely to be inherited or eliminated in a codependent manner. One hypothesis explains this presence/absence pattern as “reductive evolution”. If the cooperative interaction of both proteins determines the function of the system and one of the proteins is lost, the evolutionary pressure to maintain the other protein disappears. ...</p>
+</li>
+<li>
+<p class="binderItem"><strong>Similarity of Phylogenetic Trees</strong><br/>As demonstrated with the phylogenetic profiles, interacting proteins very often co-evolve so that changes in one protein tend to be compensated by correlated changes in the partner. However, phylogenetic profiles encode for dramatic events as consequence of gene gain/loss in different species, ignoring coordinated changes that may occur at sequence level. Such correlated changes were qualitatively reported to occur between ligands and their receptors[#Fryxell:1996fy][Kesteren:1996cs][Pages:1997w...</p>
+</li>
+<hr/>
+<ul>
+<li>
+<p class="binderItem"><strong>Correction by species tree</strong></p>
+</li>
+<li>
+<p class="binderItem"><strong>Structural features</strong></p>
+</li>
+<li>
+<p class="binderItem"><strong>Selection of reference taxa</strong></p>
+</li>
+<li>
+<p class="binderItem"><strong>Context-based approaches</strong></p>
+</li>
+<li>
+<p class="binderItem"><strong>Protein Paralogs Problem</strong></p>
 </li>
 </ul>
 <hr/>
 <li>
-<p class="binderItem"><strong>Computational methods</strong></p>
+<p class="binderItem"><strong>Coevolution based</strong></p>
+</li>
+<hr/>
+<ul>
+<li>
+<p class="binderItem"><strong>Based on residue coevolution (ver NRG)</strong></p>
+</li>
+</ul>
+<hr/>
+<li>
+<p class="binderItem"><strong>Supervised</strong></p>
 </li>
 <hr/>
 <ul>
 <li>
 <p class="binderItem"><strong>Interologs</strong></p>
 </li>
+<li>
+<p class="binderItem"><strong>mt and pp supervised variants</strong></p>
+</li>
+<li>
+<p class="binderItem"><strong>???topology based</strong></p>
+</li>
+<li>
+<p class="binderItem"><strong>Combination of methods</strong></p>
+</li>
 </ul>
+</ul>
+</ul>
+<hr/>
+<li>
+<p class="binderItem"><strong>Open problems</strong></p>
+</li>
 </ul>
 </ul>
 <hr/>
@@ -116,6 +179,55 @@ One of the most successful techniques accelerating the screening of interactions
 </li>
 <li>
 <p class="binderItem"><strong>Interactomes</strong></p>
+</li>
+<li>
+<p class="binderItem"><strong>Protein Interaction Databases</strong></p>
+</li>
+<li>
+<p class="binderItem"><strong>Computational methods</strong></p>
+</li>
+<hr/>
+<ul>
+<li>
+<p class="binderItem"><strong>Interologs</strong></p>
+</li>
+</ul>
+<hr/>
+<li>
+<p class="binderItem"><strong>intro</strong></p>
+</li>
+<li>
+<p class="binderItem"><strong>Database of Interacting Proteins</strong></p>
+</li>
+<li>
+<p class="binderItem"><strong>Biomolecular Interaction Network Database</strong></p>
+</li>
+<li>
+<p class="binderItem"><strong>Munich MPact/MIPS database</strong></p>
+</li>
+<li>
+<p class="binderItem"><strong>Intact</strong></p>
+</li>
+<li>
+<p class="binderItem"><strong>mt-tsema</strong></p>
+</li>
+<li>
+<p class="binderItem"><strong>mirrortree</strong></p>
+</li>
+<li>
+<p class="binderItem"><strong>Behind mirrortree</strong></p>
+</li>
+<li>
+<p class="binderItem"><strong>Computational evidences Databases</strong></p>
+</li>
+<li>
+<p class="binderItem"><strong>network-level</strong></p>
+</li>
+<li>
+<p class="binderItem"><strong>TF-BS</strong></p>
+</li>
+<li>
+<p class="binderItem"><strong>Inheritance through homology</strong></p>
 </li>
 </ul>
 </ul>

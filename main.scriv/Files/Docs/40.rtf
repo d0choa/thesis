@@ -1,0 +1,23 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
+{\fonttbl\f0\fnil\fcharset0 Cochin;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\fi360\sl288\slmult1\pardirnatural
+
+\f0\fs28 \cf0 As demonstrated with the phylogenetic profiles, interacting proteins very often co-evolve so that changes in one protein tend to be compensated by correlated changes in the partner. However, phylogenetic profiles encode for dramatic events as consequence of gene gain/loss in different species, ignoring coordinated changes that may occur at sequence level. Such correlated changes were qualitatively reported to occur between ligands and their receptors[#Fryxell:1996fy][Kesteren:1996cs][Pages:1997wp]. The similarity between the phylogenetic trees of  ligands and receptors, despite of not being quantified, indicated certain dependency at sequence level. However, when the genomic revolution arrived, methods to measure this similarity become mandatory.\
+\
+The first method to estimate tree similarities was implemented by calculating the correlation coefficient between distance matrices, as a proxy of their phylogenetic trees[#Goh:2000rz]. The algorithm soon was scaled up under the name *mirrortree*, using the correlation coefficient as indicator of protein-protein interactions on a genomic scale[#Pazos:2001rm][Goh:2002vg]. On this initial implementation, for the two protein families for which co-evolution is to be evaluated, multiple sequence alignments were generated using orthologs obtained from a set of reference genomes. *Mirrortree* is estimated by calculating the correlation coefficient between the inter-ortholog distances in the alignment. Correspondence between the elements of the two distance matrices is required and can be a source of problems[proteinparalogsproblem]. When a pair of proteins shows a high correlation coefficient the proteins are considered as interacting with each other. More recent modifications suggested that the usage of cophenetic distances calculated on the phylogenetic tree instead of inter-ortholog distances in the alignment, slightly improve the performance of protein protein interaction prediction[#Pazos:2005hl].\
+\
+Many successful applications of the *mirrortree* methodology came out during the last years. Correlated phylogenetic trees often appears in systems with high dependent partners that must to adapt quickly to environmental changes. Some of the most studied examples are listed below.\
+\
+*	NADH-ubiquinone reductase\
+\
+*	Perodoxin\
+\
+*	ATPase\
+\
+*	Flagellum\
+\
+To make this and other analysis possible, a web server to predict protein-protein interactions by the *mirrortree* method was published[#Tan:2004ee]. The web tool automated most of the bioinformatic workflow in order to allow non-expert users to perform coevolution analysis. The user provided a pair or a list of protein sequences and pairwise comparisons were permuted for processing. Although, the user could set different thresholds, no other interactive features existed for tree exploration. Unfortunately, the server is no longer available.\
+\
+Improvements\
+}

@@ -46,6 +46,14 @@
 \usepackage{amsmath,amsfonts,amssymb,amscd,amsthm,xspace}
 \usepackage{verbatim}
 \usepackage{longtable}
+\usepackage{fancyvrb}			% Allow \verbatim et al. in footnotes
+\usepackage{graphicx}			% To enable including graphics in pdf's
+\usepackage{booktabs}			% Better tables
+\usepackage{tabulary}			% Support longer table cells
+
+\usepackage{pifont}	% tickmarks
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
 
 %Caption
 % \usepackage[scriptsize]{subfigure}
@@ -56,3 +64,79 @@
 \usepackage{subfigure}
 \usepackage[subfigure]{tocloft} % subfigure option only if using subfigure package
 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+% \fancyhead[LO]{\slshape\nouppercase{\rightmark}}
+% \fancyhead[RE]{\slshape\nouppercase{\leftmark}}
+% \fancyhead[RO,LE]{\thepage}
+
+\renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
+\renewcommand{\sectionmark}[1]{ \markright{#1}{} }
+
+\definecolor{fgheader}{gray}{.5}
+\fancyhead[RO]{%
+	\textcolor{fgheader}{\slshape\nouppercase{\rightmark}}
+	\hskip.3cm
+	\vrule
+	\hskip.3cm
+	\thepage
+}
+
+\fancyhead[LE]{%
+	\thepage
+	\hskip.3cm
+	\vrule
+	\hskip.3cm
+	\textcolor{fgheader}{\slshape\nouppercase{\leftmark}}	
+}
+
+
+% \definecolor{bgpagenum}{gray}{.82}
+% \definecolor{fgheader}{gray}{.5}
+% \fancyhead[RO]{%
+%   \textcolor{fgheader}{%
+%     \slshape\nouppercase{\rightmark}
+%     \rlap{%
+%       \hspace{\marginparsep}%
+%       \hspace{-\fboxsep}%
+%       \colorbox{bgpagenum}{%
+%         \makebox[\textwidth][l]{\thepage}%
+%       }%
+%     }%
+%   }%
+% }
+% 
+% \fancyhead[LE]{%
+%   \textcolor{fgheader}{%
+%     \llap{%
+%       \colorbox{bgpagenum}{%
+%         \makebox[\textwidth][r]{\thepage}%
+%       }%
+%       \hspace{\marginparsep}%
+%       \hspace{-\fboxsep}%
+%     }%
+%     \slshape\nouppercase{\leftmark}
+%   }%
+% }
+
+% \makepagestyle{myruledpagestyle}
+% \makeevenhead{myruledpagestyle}{\thepage}{}{\leftmark}
+% \makeoddhead{myruledpagestyle}{\rightmark}{}{\thepage}
+% \makeatletter
+% \makepsmarks{myruledpagestyle}{
+%   \def\chaptermark##1{\markboth{%
+%         \ifnum \value{secnumdepth} > -1
+%           \if@mainmatter
+            % \chaptername\ \thechapter\ --- %
+%           \fi
+%         \fi
+%         ##1}{}}
+%   \def\sectionmark##1{\markright{%
+%         \ifnum \value{secnumdepth} > 0
+%           \thesection. \ %
+%         \fi
+%         ##1}}
+% }
+% \makeatother
