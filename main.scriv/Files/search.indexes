@@ -43,7 +43,29 @@ Nevertheless, during the last years a set of methodologies emerged to exhaustive
             <Title>High throughput studies</Title>
         </Document>
         <Document ID="40">
-            <Title>Similarity of phylogenetic trees</Title>
+            <Title>Similarity of Phylogenetic Trees</Title>
+            <Text>As demonstrated with the phylogenetic profiles, interacting proteins very often co-evolve so that changes in one protein tend to be compensated by correlated changes in the partner. However, phylogenetic profiles encode for dramatic events as consequence of gene gain/loss in different species, ignoring coordinated changes that may occur at sequence level. Such correlated changes were qualitatively reported to occur between ligands and their receptors[#Fryxell:1996fy][Kesteren:1996cs][Pages:1997wp]. The similarity between the phylogenetic trees of  ligands and receptors, despite of not being quantified, indicated certain dependency at sequence level. However, when the genomic revolution arrived, methods to measure this similarity become mandatory.
+
+The first method to estimate tree similarities was implemented by calculating the correlation coefficient between distance matrices, as a proxy of their phylogenetic trees[#Goh:2000rz]. The algorithm soon was scaled up under the name *mirrortree*, using the correlation coefficient as indicator of protein-protein interactions on a genomic scale[#Pazos:2001rm][Goh:2002vg]. On this initial implementation, for the two protein families for which co-evolution is to be evaluated, multiple sequence alignments were generated using orthologs obtained from a set of reference genomes. *Mirrortree* is estimated by calculating the correlation coefficient between the inter-ortholog distances in the alignment. Correspondence between the elements of the two distance matrices is required and can be a source of problems[proteinparalogsproblem]. When a pair of proteins shows a high correlation coefficient the proteins are considered as interacting with each other. More recent modifications suggested that the usage of cophenetic distances calculated on the phylogenetic tree instead of inter-ortholog distances in the alignment, slightly improve the performance of protein protein interaction prediction[#Pazos:2005hl].
+
+Many successful applications of the *mirrortree* methodology came out during the last years[#Devoto:2003iz][Labedan:2004dn][Dou:2006uw][McPartland:2007dv][Yang:2008dh][PineroGonzalez:2009gw][Leonard:2011ej]. Correlated phylogenetic trees often appears in systems where highly dependent partners must to adapt quickly to environmental changes. Some of the most studied examples are listed below.
+
+*	NADH-ubiquinone reductase. The members of this nuclear-encoded complex have accelerated their amino acid replacements perhaps to adapt to their mitochondrial environment[#Gershoni:2010bu]. The tree similarity between the complex partners displays a particularly high correlation coefficient. In *Escherichia coli* for instance,  NuoE and NuoF subunits show a clear similarity (0.86 in a 0-1 scale) supported by a tight interaction in the 3D structure of an homolog complex[#Pazos:2008bq][Sazanov:2006hi].
+
+*	Peroxiredoxins. Recent reports suggest that this family of proteins experience oxidation-reduction cycles acting as markers for circadian rhythms in all domains of life. The correlated evolution between the members of this family and a previously characterized clock mechanism in cyanobacterias allowed to identify this novel functional role[#Edgar:2012jd].
+
+To make this and other analysis possible, a web server to predict protein-protein interactions by the *mirrortree* method was published[#Tan:2004ee]. The tool automated most of the bioinformatic workflow in order to allow non-expert users to perform coevolution analysis. The user provided a pair or a list of protein sequences and pairwise comparisons were permuted for processing. Although, the user could set different thresholds, no other interactive features existed for tree exploration. Unfortunately, the server is no longer available.
+</Text>
+            <Notes>
+Tan et al. (2004) recently launched a web server, ADVICE, which automatically predicts protein–protein interactions by the mirror tree method upon client request.
+#Improvements
+Many methodologies for quantifying the co-evolution between two proteins use multiple sequence alignments (MSAs) as their input, and typically use these to generate phylogenetic trees to infer co-evolution based on tree similarity (top of the Figure). 
+Another group of approaches correct this and other factors affecting observed protein tree similarities using information from large collections of trees (e.g. those derived for the whole proteome of interest) (bottom of the Figure).
+
+Finally, sex-related molecular systems are another prototypic case of rapidly evolving systems in which co-evolution plays an important role, because they have to differentiate and acquire specificity quickly so to avoid cross-fertilization, while maintaining the specific interactions. Studies of co-evolution in these systems include the sequencing of 14 alleles of Brassica campestris genes, which found co-evolution between the (male) SCR and the (female) S receptor kinase110. This system forms the basis of the pollen discrimination mechanism. More recently, deep-sequencing was used to study the co-evolution between male and female fertilization proteins in abalone snails111.
+
+
+</Notes>
         </Document>
         <Document ID="32">
             <Title>Interologs</Title>
@@ -65,16 +87,11 @@ All the discrepancies found in the published datasets together with the technica
         <Document ID="41">
             <Title>mt-tsema</Title>
         </Document>
-        <Document ID="24">
-            <Title>Yeast two-hybrid</Title>
+        <Document ID="9">
+            <Title>Introduction</Title>
             <Text>
-One of the most successful techniques accelerating the screening of interactions *in vivo* is the yeast two-hybrid (Y2H) methodology. Y2H takes advantage of the fact that eukaryotic transcription activators have at least two different domains, one that binds to the DNA promoter (BD) and another that activates the transcription (AD). It was reported how the transcription can be disrupted by splitting the activator in their two constituent domains, whereas the activity can be restored if a DNA-binding domain is physically associated with an activating domain[#Fields:1989dm]. This modular property allows both domains to function in proximity to each other without direct binding. Under this principle, plasmids are engineered producing protein products containing the BD fused onto a protein and the AD fused onto another protein. The chimeric sequences are usually referred as bait and prey respectively. If the two proteins interact, a downstream reporter gene is activated producing the positive phenotype. Although the typical setup often involves beta-galactosidase as reporter in yeast, numerous variations of Y2H have been developed including systems with several reporter genes, one and three hybrids for identifying interactions with DNA and RNA[#Fashena:2000cw][Causier:2004cq][Auerbach:2002gh][VanCriekinge:1999kg], detection of interactions in mammalian and prokaryotic cells, and systems for detection of membrane proteins interactions[#Toby:2001cn][Lee:2004jv][Walhout:2001gi][Aronheim:1997we][Mohler:1996ul].
-
-The initial setup has been adapted to screen entire genomes in two different approaches[#Bartel:1996kf][Finley:1994vc][Walhout:2000wm]:
-
-*	Matrix approach. A matrix of prey clones and mated bait strains is created using distinguishable well plates. Those wells showing interacting chimeric proteins are selected based on the expression of a reporter gene.
-
-*	Library approach. The library may consist of random cDNA fragments or open reading frames representing the proteins expressed in a particular organisms or tissue. Positive interactors are usually selected based on their ability to grow in specific substrates.</Text>
+The outcome of most biological processes can hardly be understood without the comprehensive analysis of large number of components and interactions. From the most simple systems in the minimal organisms to the mammal complex machineries, the relationship between different molecules usually determines the resulting phenotype. Focusing on cellular proteins, they rarely work in isolation but are frequently involved in pathways and interaction networks. The eventual perturbation of this networks normally implicates disease or even death, so an elucidation of protein-protein interactions can greatly contribute to our understanding of pathological states.
+</Text>
         </Document>
         <Document ID="50">
             <Title>Biomolecular Interaction Network Database</Title>
@@ -109,14 +126,13 @@ The elution, containing the target protein and the interacting partners, are scr
             <Notes>Munich MPact/MIPS database. MPact is a resource to access MIPS, which contains a manually curated yeast protein interaction dataset [97] collected by curators from the literature. The resource also includes high-throughput results for yeast, but keeps this data separate. MIPS is often used as a standard of truth database for evaluating the quality of data and the accuracy of interaction prediction methods.
 </Notes>
         </Document>
-        <Document ID="9">
-            <Title>Introduction</Title>
-            <Text>
-The outcome of most biological processes can hardly be understood without the comprehensive analysis of large number of components and interactions. From the most simple systems in the minimal organisms to the mammal complex machineries, the relationship between different molecules usually determines the resulting phenotype. Focusing on cellular proteins, they rarely work in isolation but are frequently involved in pathways and interaction networks. The eventual perturbation of this networks normally implicates disease or even death, so an elucidation of protein-protein interactions can greatly contribute to our understanding of pathological states.
-</Text>
+        <Document ID="34">
+            <Title>intro</Title>
         </Document>
         <Document ID="60">
             <Title>Context-based approaches</Title>
+            <Notes>An important improvement in the co-evolution-based detection of protein–protein interactions came from the assembly of genome-wide co-evolutionary networks from the pair-wise co-evolution of individual protein pairs71. This approach, called ContextMirror, increases the accuracy of interaction predictions by correcting numerous problems related to the global tendencies of the data, including the background tree similarity due to speciation. Additionally, it is able to separate co-evolution that is specific to a given pair of proteins from general co-evolutionary trends involving many families concomitantly, as it evaluates pair-specific protein co-evolution by considering the contribution of every other protein tree. This disentanglement of direct and indirect correlations is closely related to the DCA-like methodologies of residue co-evolution, which were developed independently (see above).
+</Notes>
         </Document>
         <Document ID="43">
             <Title>Supervised</Title>
@@ -139,8 +155,16 @@ Synthetic lethality may be explored in a variety of model organisms, including D
             <Title>Computational methods</Title>
             <Text>The described limitations of the experimental technics call for the development of new approaches to predict wether two proteins interact. The interacting partners usually share some structural, physico-chemical or evolutionary constraints as consequence of their interaction. Therefore, several computational algorithms raised based on different descriptors in order to predict interactions at small or large scale. While some methods are based on structural features of the candidates, others may take advantage of the increasing genomic information available[#Shoemaker:2007gg]. The latter, known as *genome context* methods, can provide additional evidences on candidate interactions, as well as some insight on evolutionary events governing them.</Text>
         </Document>
-        <Document ID="61">
-            <Title>Open problems</Title>
+        <Document ID="24">
+            <Title>Yeast two-hybrid</Title>
+            <Text>
+One of the most successful techniques accelerating the screening of interactions *in vivo* is the yeast two-hybrid (Y2H) methodology. Y2H takes advantage of the fact that eukaryotic transcription activators have at least two different domains, one that binds to the DNA promoter (BD) and another that activates the transcription (AD). It was reported how the transcription can be disrupted by splitting the activator in their two constituent domains, whereas the activity can be restored if a DNA-binding domain is physically associated with an activating domain[#Fields:1989dm]. This modular property allows both domains to function in proximity to each other without direct binding. Under this principle, plasmids are engineered producing protein products containing the BD fused onto a protein and the AD fused onto another protein. The chimeric sequences are usually referred as bait and prey respectively. If the two proteins interact, a downstream reporter gene is activated producing the positive phenotype. Although the typical setup often involves beta-galactosidase as reporter in yeast, numerous variations of Y2H have been developed including systems with several reporter genes, one and three hybrids for identifying interactions with DNA and RNA[#Fashena:2000cw][Causier:2004cq][Auerbach:2002gh][VanCriekinge:1999kg], detection of interactions in mammalian and prokaryotic cells, and systems for detection of membrane proteins interactions[#Toby:2001cn][Lee:2004jv][Walhout:2001gi][Aronheim:1997we][Mohler:1996ul].
+
+The initial setup has been adapted to screen entire genomes in two different approaches[#Bartel:1996kf][Finley:1994vc][Walhout:2000wm]:
+
+*	Matrix approach. A matrix of prey clones and mated bait strains is created using distinguishable well plates. Those wells showing interacting chimeric proteins are selected based on the expression of a reporter gene.
+
+*	Library approach. The library may consist of random cDNA fragments or open reading frames representing the proteins expressed in a particular organisms or tissue. Positive interactors are usually selected based on their ability to grow in specific substrates.</Text>
         </Document>
         <Document ID="44">
             <Title>Interologs</Title>
@@ -165,10 +189,8 @@ More recent approaches have included statistical measures70 to detect these ‘g
 
 </Notes>
         </Document>
-        <Document ID="62">
-            <Title>Inheritance through homology</Title>
-            <Notes>Inheritance through homology. Protein interactions can be predicted through inheritance from proteins with known interactions, derived from various experimental approaches. MIPS59 contains a manually curated yeast protein­interaction dataset and is often regarded as the gold standard of protein­interaction databases. Other accessible databases include DIP, IntAct, MInT, bInD, STrInG, SCOPPI, SnAPPI­Db, iPfam, PSIMAP, PIbASE and 3did (see Supplementary information S1 (table) for descriptions). STrInG60 uses the COG database to automatically transfer associations to orthologous pro­ tein pairs in other organisms. reconstruction of whole metabolic pathways and networks is also supported by several resources such as KEGG, MetaCyc, IMG and PuMA2. TrAnSPATH61 specializes in signalling
-</Notes>
+        <Document ID="61">
+            <Title>Open problems</Title>
         </Document>
         <Document ID="45">
             <Title>mt and pp supervised variants</Title>
@@ -177,7 +199,16 @@ More recent approaches have included statistical measures70 to detect these ‘g
             <Title>Protein Interaction Databases</Title>
         </Document>
         <Document ID="54">
-            <Title>Coevolution</Title>
+            <Title>Coevolution based</Title>
+            <Notes>Methods for detecting co-evolution at the protein level often mine phylogenetic trees that have been built for many protein families using entire protein sequences20,21. The co-evolution between interacting species, such as parasite–host, predator–prey and symbionts and their hosts, is in many cases manifested as a similarity of the phylogenetic trees of these co-evolving species. Likewise, molecular co-evolution caused by physical or functional protein interactions frequently results in similarities of the corresponding protein family trees. Consequently, approaches based on protein family tree similarity can successfully identify interaction partners for a given protein, such as ligand–receptor pairs21,22.
+
+The increasing availability of protein sequences and key new methodological advances aimed at disentangling direct and indirect co-evolutionary signals have renewed the interest in co-evolution based prediction strategies, with possible applications to a wider range of biological problems, such as the prediction of contacts in protein structures, sites of specific protein interactions, as well as the predictions of protein interaction partners at genomic scale.
+
+In this Review, we present the most prominent computational methods based on co-evolution (Fig. 1). We progress through methods analyzing pairs, and then groups, of co-evolving residues, through to methods at the whole-protein level, describing the biological problems to which they have been applied, and briefly explaining the concepts and algorithms behind them. Key technical details (including the underlying algorithms) that differentiate the methods are described in Supplementary information S1–S4 (boxes), and examples of the connection between computational and experimental approaches are given in Boxes 1-3. For a summary of practical information about these computational methods and tools see Table 1. Finally, we discuss the problems related to the interpretation of the results in evolutionary terms, and present what, in our opinion, will be the most promising future developments.
+________________________
+
+There are two representative prediction methods that utilize co-evolutionary information, the mirror tree method (Pazos and Valencia, 2001) and the in silico 2-hybrid system method (Pazos and Valencia, 2002). In this paper, we focus on the mirror tree method.
+</Notes>
         </Document>
         <Document ID="37">
             <Title>Gene neighbor and gene cluster methods</Title>
@@ -219,12 +250,12 @@ Antibody libraries displaying millions of different antibodies on phage are ofte
 Competing methods for in vitro protein evolution are yeast display, bacterial display, ribosome display, and mRNA display.
 </Notes>
         </Document>
-        <Document ID="55">
-            <Title>network-level</Title>
+        <Document ID="63">
+            <Title>Computational evidences Databases</Title>
         </Document>
         <Document ID="38">
-            <Title>Phylogenetic profile methods</Title>
-            <Text>The phylogenetic profiles (PP) method is based on the hypothesis that functionally associated and potentially interacting proteins co-evolve in the way they are likely to be inherited or eliminated in a codependent manner. One hypothesis explains this presence/absence pattern as “reductive evolution”. If the cooperative interaction of both proteins determines the function of the system and one of the proteins is lost, the evolutionary pressure to maintain the other protein disappears. Likewise, if a protein is recruited, the interacting partner needs to be “acquired” in order to be functional. The underlying idea is that many complexes or pathways require all their members in order to fulfill their function. These events are compatible with the idea of the “selfish operon” in which a cohort of genes are subject of horizontal gene transfer[#Lawrence:1996wj].
+            <Title>Similarity of Phylogenetic Profiles</Title>
+            <Text>The phylogenetic profiles (PP) related methods are based on the hypothesis that functionally associated and potentially interacting proteins co-evolve in the way they are likely to be inherited or eliminated in a codependent manner. One hypothesis explains this presence/absence pattern as “reductive evolution”. If the cooperative interaction of both proteins determines the function of the system and one of the proteins is lost, the evolutionary pressure to maintain the other protein disappears. Likewise, if a protein is recruited, the interacting partner needs to be “acquired” in order to be functional. The underlying idea is that many complexes or pathways require all their members in order to fulfill their function. These events are compatible with the idea of the “selfish operon” in which a cohort of genes are subject of horizontal gene transfer[#Lawrence:1996wj].
 
 A phylogenetic profile is constructed for each protein as a vector representing its presence/absence in a set of genomes. Originally, the vectors were encoded as binary where “1” denotes presence and “0” absence in a qualitative way[#Gaasterland:1998va][Pellegrini:1999eu][Marcotte:1999eu]. Nevertheless, the binary representation is a simplistic way to encode the evolutionary events of a protein in a profile. Therefore, the similarity of the sequences with a reference organism was incorporated at each position in order to enrich the vectors with quantitative data[#Date:2003zl]. Phylogenetic profiles constructed at domain level[#Pagel:2004ky][Ranea:2004dh] or using phenotypic traits[#Levesque:2003uv][Gonzalez:2008jq] has also been used in both qualitative or quantitative ways. Once the profiles are defined, multiple measures of similarity has been used including euclidean distance[#Marcotte:1999eu], mutual information[#Date:2003zl] or Hammings distance[#Wu:2003vs]. 
 
@@ -240,21 +271,38 @@ In spite of the fact that phylogenetic profiles show in the last decade as a pow
 
 At the practical level, automatically generated phylogenetic profiles are available in several resources as STRING[#Mering:2003hp], Prolinks[#Bowers:2004df] or ECID[#AndresLeon:2009fm].</Text>
         </Document>
-        <Document ID="63">
-            <Title>Computational evidences Databases</Title>
+        <Document ID="64">
+            <Title>Protein Paralogs Problem</Title>
+            <Notes>Other MirrorTree-derived approaches predict specific pairs of interacting proteins within two large protein families including paralogues. In other words, these methods predict which paralogue(s) within one family interact(s) with those in the other, given that the two families are known to interact. The basic assumption is that the right “mapping” (set of links) between the two families will render the strongest correlation of the corresponding trees75-77. Note that in the cases described previously the mapping was known (given by the orthology relationships) and the aim was to predict the eventual interaction between the two families, while here is the general interaction between the two families is known but not the exact correspondence between the specific members of the two families).
+_______________________________________________________
+However, as seen in several ligand–receptor systems, such interactions are not always one-to-one. There are cases in which many homolog- ous ligands interact with many homologous receptors. Gertz et al. (2003) and Ramani and Marcotte (2003) independently improved the mirror tree method in similar ways to allow the consideration of such multiple interaction cases. 
+______________________________________________________
+To address this issue, several algorithms have been developed to identify specific interaction partners between two interacting families that are especially useful when families contain paralogs with different binding specificities [32–34].
+Given a pair of protein families, their distance matrices are aligned to minimize the difference between their elements, and interactions are predicted as those corresponding to aligned columns of two matrices. It was noticed earlier that most methods cannot perform an alignment search successfully if the size of families is large (more than 30 proteins in a family) [32]. One way to reduce the search space is to use the information encoded in phylogenetic trees [34].
+</Notes>
         </Document>
         <Document ID="47">
             <Title>Combination of methods</Title>
+        </Document>
+        <Document ID="55">
+            <Title>network-level</Title>
         </Document>
         <Document ID="56">
             <Title>TF-BS</Title>
         </Document>
         <Document ID="39">
             <Title>Based on residue coevolution (ver NRG)</Title>
+            <Notes>Tools at the residue level were inspired by the existence of inter-dependent changes in groups of variable amino acids, that was formulated for the first time by the covarion model6, and they typically use the multiple sequence alignment (MSAs) for a protein family of homologues to search for correlated mutations. Such correlated mutations are suggestive of compensatory changes that occur between entangled residues (e.g. those in proximity, direct contact or acting together in catalytic/binding sites) in order to maintain protein stability, function or folding7-10. Furthermore, extending these methods to search for correlated mutations between pairs of interacting proteins can identify sites of inter-protein interaction11-17. In parallel, related methods have been developed to search for larger groups of residues that are co-conserved specifically within particular protein subfamilies. These methods can identify residues that define functional properties of that subfamily, such as substrate binding specificity of a given enzyme18,19.
+</Notes>
+        </Document>
+        <Document ID="62">
+            <Title>Inheritance through homology</Title>
+            <Notes>Inheritance through homology. Protein interactions can be predicted through inheritance from proteins with known interactions, derived from various experimental approaches. MIPS59 contains a manually curated yeast protein­interaction dataset and is often regarded as the gold standard of protein­interaction databases. Other accessible databases include DIP, IntAct, MInT, bInD, STrInG, SCOPPI, SnAPPI­Db, iPfam, PSIMAP, PIbASE and 3did (see Supplementary information S1 (table) for descriptions). STrInG60 uses the COG database to automatically transfer associations to orthologous pro­ tein pairs in other organisms. reconstruction of whole metabolic pathways and networks is also supported by several resources such as KEGG, MetaCyc, IMG and PuMA2. TrAnSPATH61 specializes in signalling
+</Notes>
         </Document>
         <Document ID="48">
             <Title>Protein Interaction Databases</Title>
-            <Text>Several repositories of protein-protein interactions are publicly available to provide access to experimental evidences. While in some databases interactions are directly submitted by experimentalist; in others, the interacting proteins are obtained by mining the literature or functional associations. Wether these evidences are curated manually or by automated algorithms, also depends on the database[ppidatabases]. The information regarding the interaction could also vary depending on the resource, so efforts to standardize the annotations are ongoing[#Hermjakob:2004fz]. Indeed, different experimental technics provide complementary information. Y2H for instance, gives the identity of interacting proteins, electron microscopy provides relative positional information of the proteins, and crystallography provides full atomic detail of interaction surfaces. In spite of the variability of the stored data, a large overlapping exists in the contained information. In the future, further development and curation of interaction databases will be necessary.
+            <Text>Several repositories of protein-protein interactions are publicly available to provide access to experimental evidences. While in some databases interactions are directly submitted by experimentalist; in others, the interacting proteins are obtained by mining the literature or functional associations. Wether these evidences are curated manually or by automated algorithms, also depends on the database ([](#ppidatabases)). The information regarding the interaction could also vary depending on the resource, so efforts to standardize the annotations are ongoing[#Hermjakob:2004fz]. Indeed, different experimental technics provide complementary information. Y2H for instance, gives the identity of interacting proteins, electron microscopy provides relative positional information of the proteins, and crystallography provides full atomic detail of interaction surfaces. In spite of the variability of the stored data, a large overlapping exists in the contained information. In the future, further development and curation of interaction databases will be necessary.
 
 Databases	 |   Experimental | Structural | Functional | Manual Curation | Species Specific | References         
  :———————— | :—————————: | :——————: |  :————:| :————:|:————:|:————:|
@@ -281,10 +329,26 @@ More recent protein–protein interaction curation efforts, including the Biolog
 
 </Notes>
         </Document>
+        <Document ID="65">
+            <Title>Coevolution</Title>
+        </Document>
         <Document ID="57">
-            <Title>Correction by species tree</Title>
-            <Text>One of the problems of the mirror tree method is the large num- ber of false positives in the prediction. Even protein pairs that are known not to interact often show high correlation coefficients. The abundance of false positives in the mirror tree prediction reduces the reliability of the method in actual applications. The distance matrices of orthologous proteins from the same set of n source organisms are compared in the mirror tree method. Therefore, all of the distance matrices of the proteins are considered to include the information about the phylogenetic relationships among the same n sources, to some extent. The phylogenetic relationships among the identical set of sources behind the distance matrices would be the cause for such a high correlation between non-interacting proteins. If we can exclude
-the information about the phylogenetic relationships from the dis- tance matrices then the performance of the mirror tree method may be improved.</Text>
+            <Title>Correcting background similarity</Title>
+            <Text>One of the main problems of the original *mirrortree* algorithms was the large number of false positives produced in the predictions. Even those protein pairs that are known not to interact display high correlation coefficients. This phenomena considerably reduces the applicability of the technique. One of the possible reasons of such similarity between unrelated proteins can be explained by the background speciation events underlying both trees. As both partners are influenced by the speciation process, we can assume that they will share certain basal similarity with the canonical tree of life, independently of their functional role. Therefore, several methods emerged to exclude the information about the phylogenetic relationships of the reference genomes and compare the residual information.
+
+Different statistical techniques, as well as different representations of background similarity, has been developed for “phylogenetic subtraction”.  The first attempts to remove speciation signal subtracted 16s rRNA phylogenetic distances directly from the distance matrixes of the interacting candidates[#Sato:2005kx][Pazos:2005hl]. This corrected methodology, known as *tol-mirrortree*, found a real interactor among the 6.4% top scores for half of the proteins, compared with the 16.5% obtained by *mirrortree*. More successful examples of ligand-receptor interactions exists, now applying a correction for the background speciation[#Tiwary:2009hn]. Some authors criticized the direct subtraction of distances from the matrixes because it ignores the underlying phylogenetic dependencies. Therefore, some sophisticated methodologies tried to calculate the corrected similarities by aligning high-dimensional embeddings of the trees[#Choi:2009gu].
+
+Instead of using canonical trees to address the problem of unspecific tree similarities, some studies suggested inferring background signal from the tendencies observed in the rest of the protein families. These methods are based on the idea that unspecific similarities within a pair of phylogenetic trees can be deduced by comparing them with others. One of the first attempts to take advantage of this contextual information introduced partial correlation coefficient as similarity measure. This metric can be understood as the correlation between a pair of phylogenetic vectors excluding the information of a third vector which contains the background information. By using the variability of the phylogenetic data as third vector, false positive rate was drastically reduced[#Sato:2006eo]. An important improvement of this approach came by using the assembly of genome-wide co-evolutionary networks from the pairwise comparison of individual protein pairs. This approach, called *ContextMirror*, uses the comprehensive calculation of *mirrortree* similarities in a given organism, to calculate the partial correlation of a pair of proteins using a third protein as background correction. Since this third protein can be selected from a big set of proteins, the results are ordered based on the level of similarity with the pair of vectors under study. The level determines the specificity of the signal acting as background, so it provides more insight on the nature of the interaction. *ContextMirror* displays performances very similar to some experimental techniques. Actually, context based methodologies have shown particularly accurate reconstructing large machineries as the bacterial flagellum or the previously reported NADH-quinone oxidoreductase[#Juan:2008sf]. 
+
+Since the *tol-mirrortree*-like methods maximize the similarity when both proteins are very similar to each other but different to the species tree, this methodology showed accurate detecting non-standard evolutionary events as Horizontal Gene Transfer (HGT). The term HGT refers to the horizontal exchange of genes between distantly related strains or even species[#Brown:2003bd]. Previously described methods to detect HGT tried to infer the events from indirect evidences as DNA composition bias[#Lawrence:2002tm][Nakamura:2004hb], abnormal sequence similarities between distant species [#Clarke:2002uu] or phylogenetic incongruence of gene tree[#Daubin:2003fr][Kunin:2003tb][Farahi:2003ts]. The *tol-mirrortree*-like family of methods provide another perspective, which implies the presence of at least a pair of proteins presenting the same anomaly.
+
+</Text>
+            <Notes>Another interesting example is the machinery for flagellar assembly (Fig. 2B). For this very complex machine, we are able to obtain predictions for 19 proteins that display a high degree of connectivity among them. This case is particularly difficult because of the large number of proteins (37 proteins according to KEGG). This large number of proteins would suppose a level of specificity less than ten, because we would expect to have to remove evolutionary patterns related to this process. Further- more, the large number of relationships increases the difficulty of obtaining an accurate ranking of partial correlations. Even so, we found that most of the linked proteins indeed participated in this process, and only three (apparent) false positives and three predictions involving unknown proteins were identified. The first two false positives involve CheZ, a protein known to participate in chemotaxis, a process that is related to the regulation of flagellar rotation (9). CheZ has a very specific coevolutionary signal with FliJ, one of three soluble components of the flagellar export system and an association of intermediate specificity with one of the other two, FilH. The other false positive was the 􏰎 subunit of the DNA polymerase III (HolB). Although replica- tion is a completely different process, and there is insufficient evidence to suggest a functional relationship between HolB and FliJ, it is interesting to note that several studies have identified a close regulatory relationship between the assembly of the flagellum and the DNA replication in Caulobacter crescentus (10). With regard to the unknown proteins, there is no information for two of them (YeiI and YbhP), whereas for the third, YecS, there is indirect evidence linking it to FliY. Both proteins seem to be part of a cysteine ABC transporter, and they are predicted to be linked by other ‘‘context-based’’ computational methods such as gene fusion, gene neighborhood, and gene cooccurrence in STRING (11). Finally, there is a larger cluster composed of eight highly connected proteins (all of them part of the flagellum) that probably represents the ancestral core of the machinery. This is consistent with the observation that if we relaxed the specificity level up to 20, another five proteins would become attached to this cluster without adding any further false positives (FlgG, FlgI, FlgL, FliF, and FliM; data not shown). In the SI Text, we discuss in detail the predictions for some other complexes.
+____________________________________________________
+</Notes>
+        </Document>
+        <Document ID="66">
+            <Title>Local similarity</Title>
         </Document>
         <Document ID="49">
             <Title>Database of Interacting Proteins</Title>
@@ -293,9 +357,50 @@ the information about the phylogenetic relationships from the dis- tance matrice
         </Document>
         <Document ID="58">
             <Title>Structural features</Title>
+            <Text>Different studies focused on whether the coevolutionary signal is homogeneously distributed along the protein sequences or enriched in regions with structural relevance for the interaction.
+
+Instead of using whole-protein sequences, phylogenetic trees derived from interacting protein domains display greater similarity than non-interacting domains within the same proteins. For example, by comparing the domains of the alpha and beta subunits of the ATPase, seven out of the nine domain pairs that are known to interact present higher correlation than the two non-interacting pairs[#Jothi:2006de]. Despite of the structural complexity of the ATPase, it is remarkable how the coevolutionary signals of the interacting partners remains informative after splitting into their constituent domains. As in the case of whole protein sequences (#correctingbackgroundsimilarity)), the domain interaction prediction can be significantly improved by removing the background similarity of phylogenetic trees. Indeed, the predictor displays more accurate when the background removal is limited to the most conserved residues, suggesting that both signals are more easily disentangled on those regions[#Kann:2007ec].
+
+The similarity of phylogenetic trees at domain level suggests the presence of local regions which not necessary share the evolutionary constraints of the whole protein. Although different studies tried to explain wether different structural features contribute to the observed similarity, the relative importance of the selected residues in the coevolutionary signal remains unclear. 
+In that sense, contradictory reports regarding the coevolution of coevolution analysis restricted to protein interfaces has been done. 
+
+strong contribution of coevolution of binding inter- faces to the correlation signal between evolutionary protein interfaces as regions 
+
+Although some evidences suggested that , there is certain controversy about at what extent the local similarities 
+  
+There is certain controversy about  the co-evolutionary signal.  
+
+*Interfaces*
+
+*Think about coevolution as a local signal*
+*Problems to extent it genome-widely*</Text>
+            <Notes>In addition to the use of whole-protein sequences, phylogenetic trees derived from particular protein domains can be used to identify the interacting domains of two interacting proteins, on the basis that these domains exhibit stronger co-evolution signals than other non-interacting domains within the same proteins78. Similarly, trees restricted to the interfaces showed that these co-evolve more intensely than the rest of the protein79. 
+
+Both of these observations indicate that in many cases the co-evolution between interacting proteins is a local phenomenon, which can be circumscribed to certain regions or even particular residues. This would be in line with the use of co-evolution signatures to identify interacting residues within proteins, as discussed earlier, and points to the possibility of using those co-evolutionary signatures at the residue level to look for protein–protein co-evolution (section “Convergence of residue- and protein-based methods” below).
+_____________________________________
+
+It has recently been shown that the tree similarity of interacting proteins is more evident when it is calculated for the residues that make up the actual interaction surfaces (Mintseris and Weng, 2005) or when relatively conserved regions are used rather than the full protein sequences (Kann et al, 2007). Co-evolution is also evident between interacting domains to such an extent that it is possible to pinpoint the domains responsible for the interaction using domain- restricted calculations of tree similarity (Jothi et al, 2006).
+_______________________________________
+The results from co-evolutionary analysis (using orthologs from 22 species) are listed as tables in Figure 3(b), which clearly shows that those domain pairs that interact do, in fact, have relatively high correlation scores. A cartoon of one of several bovine mitochondrial F1-ATPase crystal structures (PDB: 1h8e), supporting the interactions, is shown in Figure 3(c). Despite the complexity of this system, it is remarkable that the degree of co-evolution among the interacting domain pairs is clearly higher than that among the non-interacting domain pairs.
+__________________________________________
+At the structural level, considerable amount of work has been done to understand protein/domain interactions. Littler and Hubbard 34 performed a comprehensive analysis of domain–domain interac- tions observed in protein structures in an effort to understand comparative orientation and interacting surfaces of structurally unsolved domain pairs. Gong et al.35 used geometric properties/tools such as accessible surface area and Voronoi diagram on Protein Data Bank (PDB) crystal structures of protein complexes to detect domain interaction interfaces. Shoemaker et al.36 used a conserved binding mode analysis on domain–domain interactions inferred from PDB crystal structures to detect binding
+surfaces of biological relevance. Neduva et al.37 studied interactions that involve binding between a globular domain in one protein and a short linear motif (pattern of three to eight residues), and proposed a systematic approach to discover these motifs. For a comprehensive review of structure- based interaction studies, we refer the reader to Aloy and Russell's recent review on protein interactions.38
+Structural information is necessary and critical for a full understanding of molecular/domain level interaction. However, as the number of interactions with known protein structures is far fewer than the number of interactions, it makes it difficult to understand domain level interactions at the genomic scale. Here, we attempt to understand domain– domain interactions at the sequence level. Specifi- cally, we investigate the relative degree of co- evolution of domains in interacting proteins to understand whether or not interacting domain pairs exhibit higher level of co-evolution that those that are non-interacting. The concept of co-evolution has been widely applied in predicting protein– protein interactions solely based on sequence information14,16,39–44 as well as the gene expression data.45,46
+_______________________________________________
+In agreement with previous work indicating that coevolutionary signal is not restricted to the binding interface, we found that when the binding neighbor- hoods are completely removed, the remaining sequences of interacting domains still contain a significant coevolutionary signal. However, we also found that the signal is not distributed uniformly across the sequence. In particular, removing the binding neighborhood significantly reduced the performance of the method. In addition, we found that the binding neighborhood alone provides a stronger coevolutionary signal than the same number of randomly selected residues outside the binding neighborhood. Thus, the correlation bet- ween evolutionary distances of interacting protein domains can only be partially explained by the common evolutionary pressure exerted along the whole sequence of interacting protein domains. In particular, our results indicate that the binding neighborhood has a significantly higher contribu- tion to this signal than the rest of the protein domain sequence.
+
+</Notes>
         </Document>
         <Document ID="59">
-            <Title>Selection of reference taxa</Title>
+            <Title>Patterns of local coevolution</Title>
+            <Text>The *mirrortree*-related methodologies usually assume that the coevolutionary signal shared by a pair of proteins spreads over the tree of life. However, as in the phylogenetic profiles ([](#similarityofphylogeneticprofiles)), interacting proteins may strongly coevolve in some parts of the evolutionary tree while exhibiting a very weak signal in the rest of the species. Local similarities may be related with recent interactions, whereas global similarities in the phylogenetic tree may evidence a relationship occurring since ancestral species. Dealing with this asymmetric nature of coevolutionary signal is not trivial as it raises combinatorial problems.
+
+The *MatrixMatchMaker* (MMM) approach handle this problem by finding the largest common sub matrix that is compatible with certain evolutionary distance matrixes. This bottom-up approach seeks only for this sequences most strongly implicated in coevolutionary signal. The matrixes therefore can include erroneously assigned sequences or paralogs since they most likely will be excluded in the final similarity. By playing with a tolerance threshold, the extent of the coevolutionary signal can be weighted. By using this approach, proteins that are known to interact in humans showed a more strong signal than proteins that simply belong to the same biochemical pathway[#Tillier:2009ff]. Further implementations provided considerable speedups on computational time[#Rodionov:2011ji].
+
+The mentioned problem of the paralogous sequences is also related with the optimization of protein similarity. In the *mirrortree* derived approaches the right mapping between the sequences of both candidates need to be known in order to calculate their tree similarity. However, when duplicated genes  are present, deciphering the corresponding paralog in the other tree can be a challenging task. Under the hypothesis that correct mapping maximizes the similarity between both trees, several methods emerged to detect interacting partners within large families of duplicated genes[#Ramani:2003vk][Jothi:2006de][Izarzugaza:2006bw][Tillier:2006ke][Izarzugaza:2008ih][Hajirasouliha:2012in]. 
+
+The problem of selecting an optimal reference set of sequences and their influence on interaction prediction remains not clear, though. Considering the increasing number of completely-sequenced genomes, the search for local evolutionary signals would not be enough as the problem growths exponentially with the number of sequenced organisms. In the future, selection of representative subsets of organisms might be valuable to predict type-specific interactions.
+</Text>
         </Document>
     </Documents>
 </SearchIndexes>
