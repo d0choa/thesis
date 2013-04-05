@@ -1,0 +1,28 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+{\fonttbl\f0\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;}
+\deftab720
+\pard\pardeftab720\sa240
+
+\f0\fs26 \cf0 We used the NCBI taxonomic tree [17] as framework for the taxonomy-based selection of organisms. This tree classifies organisms according with a pre-defined hierarchy in which the root represents \'93cellular organ- isms\'94, the first level represents the \'93superkingdoms\'94 (Archaea and Eubacteria in our dataset, which does not include eukarya), the next one the \'93phylums\'94, and so on. This tree does not contain quantitative information
+\fs24  
+\fs26 on phylogenetic distances between organisms. Two cri- teria were used for performing the selections:
+\fs24 \
+
+\fs26 \'95 \'93Nearest\'94. Starting from our reference organism (E coli K12) we follow its taxonomy back to the root of the tree and successively take all the organisms belonging to each node. So \'93nearest_1\'94 represents the E coli species (4 organisms -strains-), \'93nearest_2\'94 contains the Enterobacteriaceae family (21 organ- isms), and so on up to \'93nearest_6\'94 which represents the Bacteria superkingdom (195 organisms) and \'93nearest_7\'94 (whole dataset, bacteria+archaea, 214organisms). Four organisms are represented in the trees but not used due to the lack of information on their proteomes in the NCBI data. This sampling is designed to evaluate the effect of including close vs. distant organisms in the performance, as well as the effect of the redundancy to some extent (Figure 1).
+\fs24 \
+
+\fs26 \'95 \'93Level\'94. The taxonomic tree is successively cut at each level of the hierarchical classification starting from the root (superkingdom, phylum, ...) and one organism is taken from each resulting group. The criterion for selecting an organism within a group is simply to use that with the highest number of pro- teins in its genome. The rationale for doing this is to maximize the chances of finding orthologs in that genome in subsequent steps of the process. So, \'93level_1\'94 would contain 2 organisms (one eubacteria and one archaea), \'93level_2\'94 contains 16 organisms, one for each phylum. And so on up to \'93level_9\'94 which represents the whole dataset (214 genomes). This experiment is designed to quantify the effect of sampling homogeneously the taxonomy at different levels of granularity (Figure 1).
+\fs24 \
+
+\fs26 \'95 For comparative purposes we also included the set of genomes used in Juan et al [13] (116 genomes). This set is very similar to our \'93level_5\'94 (97 organisms).\
+\'93
+\fs18 These 116 genomes were obtained from the set of all fully sequenced pro- karyotic genomes (218 in February 2005) by taking only one representative from each clade at the first level of the National Center for Biotechnology Information taxonomic tree (the one with the largest genome), which means taking only one strain for each species.
+\fs24 \
+
+\fs26 \'94
+\fs24 \
+
+\fs26 Due to the requirement of 15 or more organisms in common between the trees of two protein families (see next point), some of these subsets are never used in practice. The lists of organisms in the final 12 subsets used, as well as representations of their taxonomic dis- tributions, are available in the \'93Additional file s1\'93.
+\fs24 \
+}

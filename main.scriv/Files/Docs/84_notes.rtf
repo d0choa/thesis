@@ -1,0 +1,50 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+{\fonttbl\f0\fnil\fcharset0 LucidaGrande;\f1\froman\fcharset0 TimesNewRomanPSMT;\f2\froman\fcharset0 Times-Roman;
+}
+{\colortbl;\red255\green255\blue255;}
+\deftab720
+\pard\pardeftab720\sa240
+
+\f0\fs24 \cf0 \
+\pard\pardeftab720\sa240
+
+\fs26 \cf0 Additionally, we also evaluated the results in terms of \'93precision\'94, \'93recall\'94 (see Results).
+\fs24 \
+***************\
+ROC analysis was performed with the ROCR library of the R statistical package (http://www.r-project.org).\
+\
+\pard\pardeftab720\sa240
+
+\f1\fs38 \cf0 Another possible way of evaluating the capacity of a method in separating positives and negatives (as well as recovering the positives) is using \'93precision\'94 and \'93recall\'94. Cutting the sorted list of scores at a given threshold, \'93precision\'94 (also known as \'93positive predictive value\'94 - PPV) and \'93recall\'94 (the same as \'93sensitivity\'94 and \'93true positive rate\'94 (TPR) in binary classification) are defined as
+\f2\fs24 \
+\pard\pardeftab720\sa240
+
+\i\b\fs38 \cf0 precision= Tp/(Tp+Fp) recall= Tp/P
+\i0\b0\fs24 \
+\pard\pardeftab720\sa240
+
+\f1\fs38 \cf0 where 
+\f2\i Tp 
+\f1\i0 and 
+\f2\i Fp 
+\f1\i0 are the true positives and false positives obtained at a that threshold, and 
+\f2\i P 
+\f1\i0 the total number of positives (irrespective of whether the method could be applied to them or not).
+\f2\fs24 \
+
+\f1\fs38 It is common to combine \'93precision\'94 and recall into a single parameter called \'93F-measure\'94, which is the harmonic average of these two figures,
+\f2\fs24 \
+\pard\pardeftab720\sa240
+
+\i\b\fs38 \cf0 F-measure= 2\'b7precision\'b7recall/(precision+recall)
+\i0\b0\fs24 \
+\pard\pardeftab720\sa240
+
+\f1\fs38 \cf0 And to represent the F-measure against the threshold (score of the method, correlation coefficient in this case).
+\f2\fs24 \
+
+\f1\fs38 These F-measure 
+\f2\i vs. 
+\f1\i0 score plots complement the ROC plots of Figure 2 in providing information on the different performance of the methods and organisms datasets.
+\f2\fs24 \
+}

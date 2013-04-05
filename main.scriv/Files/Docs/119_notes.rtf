@@ -1,0 +1,53 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+{\fonttbl\f0\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;}
+\deftab720
+\pard\pardeftab720\sa240
+
+\f0\fs38 \cf0 Discussion
+\fs24 \
+\pard\pardeftab720\sa240
+
+\fs26 \cf0 Our results show that considerable differences in perfor- mance are obtained with mirrortree-based methodolo- gies depending on the set of organisms used for building the trees. They also show that it is not always better to use as many genomes as available, as pre- viously assumed. Most of these results have plausible explanations taking into account the type of interaction and the taxonomic distribution of the organisms.
+\fs24 \
+
+\fs26 The fact that, in general, all methods work better as more genomes are used is not surprising as more co- evolutive information is available for them. Nevertheless, it is important to take into account the issues related to phylogenetic distances and redundancy commented below. PC and CM to some extent correct tree similari- ties artificially increased by the introduction of redun- dant genomes (strains, etc.) [13]. That is not the case for MT and hence this methodology is especially sensi- ble to this and other phylogenetic biases, some of which can be corrected explicitly [10,11]. The corrections of all these phylogenetic biases implicit in PC and CM make them to be consistently benefited from using more organisms.
+\fs24 \
+
+\fs26 Another feature of these macromolecular complexes is that, in general, they represent ancient interactions, compared to transient interactions and functional associations. For this reason, the interaction is expected to occur for all orthologs (interlogs), and hence its asso- ciated co-evolutive landmark to be spread through the whole taxonomy. That would explain the observation that better results are obtained for this kind of interac- tions when including distant organisms within the datasets.
+\fs24 \
+
+\fs26 Functional associations and transient interactions are intuitively less prone to yield strong co-evolutions, what would explain the globally lower performances associated to them. Another characteristic of these associa- tions is that, in general, they are \'93newer\'94 than the macromolecular complexes. It is known that \'93rewiring\'94 transient interactions is easy and relatively fast in evolu- tionary terms [25]. For this reason, it may happen that the orthologs of two proteins participating in a transient interaction in a given organism are not interacting in a relatively distant one (they are not true \'93interlogs\'94) [26,27]. If that is the case, including these \'93orthologs\'94, which are not interacting and hence not subject to co- evolution, would \'93dilute\'94 the co-evolutionary signal. This would explain the fact that, for these types of inter- actions and associations, better results are obtained when using only close organisms, since the interaction is expected to be conserved on them, while it might be absent in taxonomically distant organisms. In other words, many of the E coli pathways and transient inter- actions we are evaluating might be new and hence specific for this microorganism and its close neighbors, and hence the eventual co-evolutions associated to them would be apparent only in these particular genomes. Interestingly, a similar relationship between the \'93age\'94 of the interactions, their conservation across the taxonomy, and the resulting optimal set of organisms has been reported for the \'93phylogenetic profiling\'94 method [15].
+\fs24 \
+
+\fs26 A future study aimed at obtaining more insight into the relationship between organism sets and performance
+\fs24  
+\fs26 should include samplings according with other taxo- nomic criteria (as well as combinations of them: i.e. combining \'93nearest"+"level\'94), and a detailed study of the particular interactions detected and not detected in each experiment (their functional classes, etc).
+\fs24 \
+
+\fs26 In the next section, we propose some recipes for the users of these methodologies derived from these results. We plan to implement some of the recipes obtained for the MT method in its recently developed web server [9].
+\fs24 \
+\pard\pardeftab720\sa240
+
+\fs32 \cf0 Conclusion
+\fs24 \
+\pard\pardeftab720\sa240
+
+\fs26 \cf0 The number of available genomes continues to grow. And the more we know on protein interactions the more we realize that it is a very complex phenomenon with different types of interactions having different char- acteristics. For these reasons it is increasingly important to \'93tune\'94 protein interaction prediction methodologies adapting them for each specific application, instead of using the same protocols and data sources in every situation. Many methods and concepts are being built around the reported relationship between similarity of evolutionary histories (co-evolution) and protein interac- tions. For this reason it is timely to get insight into the different factors affecting such relationship. Among these factors, a critical one not explored previously is the effect of the organism set used to build the trees on the behavior of these methodologies.
+\fs24 \
+
+\fs26 Our results allow us to propose a set of simple and general \'93recipes\'94 for users on which set of organisms to use depending on the type of interactions they want to predict and the genomic information available.
+\fs24 \
+
+\fs26 If phylogenetic trees for the whole genome of interest can be calculated (or are already available in some data- base/resource), use PC and CM instead of MT. If MT has to be used (i.e. trees not available for all the proteins within a genome, lack of computational resources, etc.) the set of organisms to use should be filtered by phylo- genetic redundancy. Filtering at the strain or species level seems to be enough.
+\fs24 \
+
+\fs26 PC is a sort of \'93all-road\'94 method since it shows the lowest dependence on the organism set. It is the best option for general situations, when we are not sure which set of organism to use. It is also better than CM in terms of coverage and hence it is more adequate if we are interested in retrieving many interactions at the expenses of bearing more false positives. Moreover, it is computationally less intensive than CM.
+\fs24 \
+
+\fs26 CM should be the chosen option when a lot of gen- omes (as well as enough computational resources) are available and we are interested in detecting a small number of interactions but highly reliable. Not only it renders the best accuracy but additional information on the structure of the co-evolutionary network which offers some clues about the substructure and functioning of macromolecular complexes is obtained as well [13]. It has to be taken into account that its perfor- mance drops drastically when few organisms are available.
+\fs24 \
+
+\fs26 Apart from that, if possible it is important to include or exclude distant organisms depending on the type of interactions we try to detect. I.e. to remove phylogeneti- cally distant organisms if we suspect the interactions are not conserved on them ("newer\'94 interactions).
+\fs24 \
+}

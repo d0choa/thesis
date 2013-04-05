@@ -1,0 +1,55 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+{\fonttbl\f0\fnil\fcharset0 Cochin;\f1\fnil\fcharset0 Consolas;}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red246\green246\blue246;}
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\fi360\sl288\slmult1\pardirnatural
+
+\f0\fs28 \cf0 In order to illustrate how using close/distant organisms can drastically affect the interaction prediction, we included some examples extracted from the \'93Complexes\'94 and \'93Binary physical\'94 datasets as evidence of [\'93old\'94 and \'93recent\'94 interactions, respectively](#examplesofpotentiallyinteractingproteins). The selected proteins involved in the \'93recent\'94 interactions are mostly related with metabolic functions, except for MinE-MinD, which is associated with the division machinery[#DavidMRaskin:1999wd]. On the other hand, the \'93old\'94 interactions include some proteins involved in transcription/translation machineries as well as interactions between members of one of the most ancient families of proteins: the ABC transporters[#Jones:2004bx]. \
+\
+\pard\pardeftab720
+
+\f1\fs18 \cf2 \cb3            |**Protein**  | **Description**\
+| :------: | :---------: | :--------------------------------------------------------------------\
+           |MINE_ECOLI   | Cell division topological specificity factor\
+           |MIND_ECOLI   | Septum site-determining protein MinD\
+           |PABA_ECOLI   | Para-aminobenzoate synthase glutamine amidotransferase component II\
+*recent*   |PABB_ECOLI   | Para-aminobenzoate synthase component 1\
+Binary physical |DHAS_ECOLI   | Aspartate-semialdehyde dehydrogenase\
+           |DNAK_ECOLI   | Chaperone protein DnaK\
+           |GSHB_ECOLI   | Glutathione synthetase\
+           |AMPM_ECOLI   | Methionine aminopeptidase\
+\
+           |DPO3A_ECOLI  | DNA polymerase III subunit alpha\
+           |DPO3E_ECOLI  | DNA polymerase III subunit epsilon\
+           |RPOB_ECOLI   | DNA-directed RNA polymerase subunit beta\
+*old*      |RPOA_ECOLI   | DNA-directed RNA polymerase subunit alpha\
+Complexes  |ZNUB_ECOLI   | High-affinity zinc uptake system membrane protein ZnuB\
+           |ZNUC_ECOLI   | Zinc import ATP-binding protein ZnuC\
+           |ZNUA_ECOLI   | High-affinity zinc uptake system protein ZnuA\
+[Examples of potentially interacting proteins]\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\fi360\sl288\slmult1\pardirnatural
+
+\f0\fs28 \cf0 \cb1 \
+In [](#examplesofpotentiallyinteractingpairs) the co-evolution between pairs of these proteins was evaluated using PC and two sets of organisms: \'93level 9\'94, which is synonym of the full set of organisms; and \'93nearest 2\'94, which contains only organisms belonging to the Enterobacteriaceae family. For each of these sets and considering a given protein, the total number of candidate interacting partners for which it was possible to calculate significant correlations (Tot) was indicated. Within these candidates, the number of positive interactions (+) was also shown in the same column. In another column, the PC coefficients were tabulated (corr), displaying only the highest correlation (max) when more than one positive partner is predicted. Finally, the [Area Under ROC Curve (AUC)](#performanceevaluation) was also included as a single numerical estimator indicating the predictor ability to distinguish positives and negatives along the list of candidate partners. For simplicity the AUC values where calculated using the positives and negatives on the lists, contrary to the partial ROC curves calculated in [](#selectionrocs.pdf), which were based on the total number of positives and negatives in the gold standard dataset.\
+\
+\pard\pardeftab720
+
+\f1\fs18 \cf2 \cb3 | **Protein**                            ||          **Level9 (=all)**                |||	 **Nearest2**                             |||\
+|		                           || Tot/+  |    AUC    |  Interactor (corr)     | Tot/+   |  AUC      | Interactor (corr)      |\
+ :------------------ | :----------------: | :-----: | :-------: | :--------------------: | :-----: | :------: | :--------------------: |\
+                     | MINE_ECOLI         | 846/1   | 0.12      | MIND_ECOLI (0.52)      | 223/1   | **0.83** | **MIND_ECOLI (0.60)**\
+*recent*             | PABA_ECOLI         | 671/1   | 0.28      | PABB_ECOLI (0.49)      | 106/1   | **0.96** | **PABB_ECOLI (0.96)**\
+                     | DHAS_ECOLI         | 760/1   | 0.17      | DNAK_ECOLI (0.48)      | 384/1   | **0.81** | **DNAK_ECOLI (0.90)**\
+                     | GSHB_ECOLI         | 755/1   | 0.30      | AMPM_ECOLI (0.61)      | 375/1   | **0.93** | **AMPM_ECOLI (0.95)**\
+\
+                     | DPO3A_ECOLI        | 306/1   | **0.70**  | **DPO3E_ECOLI (0.73)** | 128/1   | 0.11     | DPO3E_ECOLI (0.57)\
+                     | DPO3E_ECOLI        | 357/1   | **0.64**  | **DPO3A_ECOLI (0.73)** | 123/1   | 0.22     | DPO3A_ECOLI (0.57)\
+                     | RPOB_ECOLI         | 280/7   | **0.82**  | **(0.98) max**       | 126/4   | 0.48     | (0.93) max\
+ *old*               | RPOA_ECOLI         | 258/6   | **0.81**  | **(0.80) max**       | 90/3    | 0.48     | (0.93) max\
+                     | ZNUB_ECOLI         | 370/2   | **1.00**  | **(0.87) max**       | 129/1   | 0.36     | ZNUC_ECOLI (0.74)\
+                     | ZNUC_ECOLI         | 386/2   | **0.99**  | **(0.87) max**       | 123/2   | 0.41     | (0.74) max\
+                     | ZNUA_ECOLI         | 395/2   | **0.98**  | **(0.87) max**       | 39/1    | 0.79     | ZNUC_ECOLI (0.74)\
+[Examples of potentially interacting pairs] \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\fi360\sl288\slmult1\pardirnatural
+
+\f0\fs28 \cf0 \cb1 \
+On the selected examples, the \'93recent\'94 interactions present higher co-evolutionary scores and AUCs - in bold - when using the \'93nearest 2\'94 dataset. Exactly the opposite occurs for the \'93old\'94 interactions, which show higher co-evolutionary scores and performances when using the organisms present in \'93level 9\'94. For example, the subunit alpha of the ancient machinery DNA polymerase III (DPO3A_ECOLI) has only one reported interaction in the \'93Complexes\'94 dataset which is the epsilon subunit (DPO3E_ECOLI). If we attend to the results of the co-evolution analysis using both sets of organisms, we can appreciate significant differences. Whereas PC  using \'93level 9\'94 is able to produce significant scores for 306 pairs of alpha subunit, this number is considerably reduced to 128 when the \'93nearest 2\'94 set is introduced. Moreover, the PC score calculated with the full set of organisms as reference (\'93level 9\'94) is 0.73, dropping to 0.57 when using only enterobacterias (\'93nearest 2\'94). As a direct consequence of the correlation drop, the proportion of false positives grows negatively affecting the AUC, which decreases from 0.70 in \'93level 9\'94 to 0.11 in \'93nearest 2\'94. We can find the exactly opposite behavior in the \'93recent\'94 interactions where \'93nearest 2\'94 dataset performs better predicting interacting partners ([](#examplesofpotentiallyinteractingpairs)). }

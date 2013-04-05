@@ -41,13 +41,37 @@
 	\bibliocommand
 \fi
 
-\clearpage
-%Aknowledgements
-\input{/Users/dochoa/Projects/thesis/thesis.tex/frontmatter/abbrev}
-\input{/Users/dochoa/Projects/thesis/thesis.tex/frontmatter/aknowledges}
+%for appendixes
+% \renewcommand\chapter{\@startsection{chapter}{1}{\z@}%
+%                                      {-3.5ex \@plus -1ex \@minus -.2ex}%
+%                                      {2.3ex \@plus.2ex}%
+%                                      {\hspace{-0.4pt}\Large\bfseries Appendix }}
 
+
+\clearpage
+
+
+
+\begin{appendices}
+\appendixpage
+% \noappendicestocpagenum
+% \addappheadtotoc
+\appendix
+\makeatletter
+\renewcommand{\thesection}{\thechapter. \@arabic\c@section}
+\renewcommand{\thesubsection}{\thesection. \@arabic\c@section}
+\renewcommand{\thesubsubsection}{\thesubsection. \@arabic\c@section}
+\renewcommand{\thefigure}{S\@arabic\c@figure} 
+\makeatother
+\input{/Users/dochoa/Projects/thesis/thesis.tex/endmatter/appendix_dorota}
+\input{/Users/dochoa/Projects/thesis/thesis.tex/endmatter/supplementary_figures}
+\cleardoublepage
+\input{/Users/dochoa/Projects/thesis/thesis.tex/endmatter/papers}
+\end{appendices}
+\cleardoublepage
 % Glossary
 % \printglossaries
+\input{/Users/dochoa/Projects/thesis/thesis.tex/frontmatter/aknowledges}
 
 % Index
 % \printindex
