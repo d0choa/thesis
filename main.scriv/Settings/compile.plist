@@ -469,7 +469,7 @@ p.shot {text-align:left; text-indent:0; margin: 12pt 0pt 0pt 0pt; text-transform
 		</dict>
 		<dict>
 			<key>data</key>
-			<string>mmd-equation-mode</string>
+			<string>../mmd-equation-mode</string>
 			<key>key</key>
 			<string>latex input</string>
 		</dict>
