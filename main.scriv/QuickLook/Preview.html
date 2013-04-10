@@ -45,7 +45,7 @@ The study of interactions between the components of biological systems and how t
 </ul>
 <hr/>
 <li>
-<p class="binderItem"><strong>Protein-Protein Interactions</strong><br/>One of the most studied biological networks are those based on Protein-Protein Interactions (PPIs). PPIs are the result of a physical binding between two or more proteins to accomplish a biological function. They can be classified into different categories depending on their strength (permanent and transient), specificity (specific or nonspecific) or the similarity between interacting subunits (homo- and hetero-oligomers). In the next sections, we will attend to another classification depending ...</p>
+<p class="binderItem"><strong>Protein-Protein Interaction Networks</strong><br/>One of the most studied biological networks are those representing Protein-Protein Interactions (PPIs). PPIs are the result of a physical binding between two or more proteins to accomplish a biological function. They can be classified into different categories depending on their strength (permanent and transient), specificity (specific or nonspecific) or the similarity between interacting subunits (homo- and hetero-oligomers). In the next sections, we will attend to another classification depend...</p>
 </li>
 <li>
 <p class="binderItem"><strong>Experimental Determination of PPIs</strong><br/>The instability and heterogeneity of PPIs make their detection extremely sensible to the experimental setup. Different methods have been developed to screen interactions in order to capture their heterogeneous nature.<br/>
@@ -315,20 +315,23 @@ The performance of both methods predicting two different types of physical inter
 <hr/>
 <ul>
 <li>
-<p class="binderItem"><strong>Mirrortree web server [discmtserver]</strong><br/>The Mirrortree server represents the first web application for interactively assessing the co-evolution between a pair of phylogenetic trees in a taxonomic framework. Since the tool is plenty of different functionalities to explore the tree similarity, the server is adequate for both general comparative analysis or co-evolution studies focused on protein interaction prediction.<br/>
+<p class="binderItem"><strong>Mirrortree web server [discmtserver]</strong><br/>The Mirrortree server represents the first web application for interactively assessing the co-evolution between a pair of phylogenetic trees in a taxonomic framework. Since the tool contains a number of additional functionalities, the server is adequate for either general comparative analysis or co-evolution studies focused on protein interaction prediction.<br/>
 <br/>
-One of the main advantages of Mirrortree server is its simplicity. The server combines for the first time a straight f...</p>
+One of the main advantages of Mirrortree server is its simplicity. The server combines for the first time a straight forward pipeline to a...</p>
 </li>
 <li>
 <p class="binderItem"><strong>Global performance of genome-wide predictions [discglobal]</strong><br/>Alternatively to the low throughput analysis of protein-protein interactions, the *mirrortree* family of methods have shown particularly accurate predicting different types of interactions. Although our goal has been focused in the better understanding of the different phenomena rather than in method comparison, the results of the different *mirrortree* variants are in agreement with previous studies[#Juan:2008sf]. The lower MT performance compared with PC and CM had been previously reported but...</p>
 </li>
 <li>
-<p class="binderItem"><strong>Incorporating information on predicted solvent accessibility [discaccessibility]</strong><br/>The general observation that predicted accessibility only helps the PC and CM predictions in detecting binary physical interactions can be understood as an additional evidence in the co-adaptation *vs.* general co-evolution debate[#Pazos:2008bq].<br/>
-<br/>
-The fact that accessibility predictions worsens MT results suggests that the score of this methodology might be highly influenced by general non-specific co-evolutive processes. This general forces, which can produce similarities in evolutionary rates,...</p>
+<p class="binderItem"><strong>Incorporating information on predicted solvent accessibility [discaccessibility]</strong><br/>The fact that the incorporation of accessibility predictions worsens MT results suggests that the score of this methodology might be highly influenced by general non-specific co-evolutive processes. This general forces, which can produce similarities in evolutionary rates, would spread their signal through the whole sequences and not necessarily restricted to certain regions of exposed residues. This observation is supported by the fact that MT performances correlate positively with the number o...</p>
 </li>
 <li>
-<p class="binderItem"><strong>Selection of organisms [discselection]</strong></p>
+<p class="binderItem"><strong>Co-evolution *vs* Co-adaptation [disccovsco]</strong><br/>The observation that predicted accessibility only helps the PC and CM predictions in detecting binary physical interactions can be understood as an additional evidence in the co-adaptation *vs.* general co-evolution debate.  <br/>
+<br/>
+As commented before, the causes underlying observed co-evolution between interacting proteins are still not totally clear. The possible explanations range from unspecific co-evolution due to concerted patterns of co-variation, to specific co-adaptation involving reciprocal...</p>
+</li>
+<li>
+<p class="binderItem"><strong>Selection of organisms [discselection]</strong><br/>Our results unambiguously indicate that the set of organisms used to generate the phylogenetic trees critically influences the protein interaction predictions. In general, the growing number of available organisms produces two opposite consequences in *mirrortree*-based predictions. On one hand, the phylogenetic reconstructions are then based on more complete representations of the evolutionary history of the protein families. Therefore, it is not surprising that the methods benefit from the enr...</p>
 </li>
 <li>
 <p class="binderItem"><strong>Evolutionary significant assesment of co-evolution [discpvalue]</strong></p>

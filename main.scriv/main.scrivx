@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<ScrivenerProject Version="1.0" Creator="SCRMAC-2.4.1-22949" Modified="2013-04-07 12:48:25 +0200">
+<ScrivenerProject Version="1.0" Creator="SCRMAC-2.4.1-22949" Modified="2013-04-10 19:14:41 +0200">
     <Binder>
         <BinderItem ID="0" Type="DraftFolder" Created="2013-01-02 19:30:51 +0100" Modified="2013-01-02 19:30:51 +0100">
             <Title>Draft</Title>
@@ -7,7 +7,7 @@
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <CorkboardAndOutliner>
-                <SelectedSubdocumentIDs>97</SelectedSubdocumentIDs>
+                <SelectedSubdocumentIDs>123</SelectedSubdocumentIDs>
                 <OutlinerExpandedState>
                     <ItemID>9</ItemID>
                     <ItemID>16</ItemID>
@@ -59,36 +59,36 @@
                                 <TextSelection>922,0</TextSelection>
                             </TextSettings>
                             <Children>
-                                <BinderItem ID="17" Type="Text" Created="2013-01-22 13:31:37 +0100" Modified="2013-03-23 21:44:30 +0100">
+                                <BinderItem ID="17" Type="Text" Created="2013-01-22 13:31:37 +0100" Modified="2013-04-10 17:09:41 +0200">
                                     <Title>Biological Networks [biologicalnetworks]</Title>
                                     <MetaData>
                                         <StatusID>6</StatusID>
                                         <NotesTextSelection>0,0</NotesTextSelection>
                                     </MetaData>
                                     <TextSettings>
-                                        <TextSelection>1149,0</TextSelection>
+                                        <TextSelection>1143,0</TextSelection>
                                     </TextSettings>
                                 </BinderItem>
                             </Children>
                         </BinderItem>
-                        <BinderItem ID="12" Type="Text" Created="2013-01-18 13:36:01 +0100" Modified="2013-04-03 14:51:18 +0200">
-                            <Title>Protein-Protein Interactions</Title>
+                        <BinderItem ID="12" Type="Text" Created="2013-01-18 13:36:01 +0100" Modified="2013-04-10 17:19:01 +0200">
+                            <Title>Protein-Protein Interaction Networks</Title>
                             <MetaData>
                                 <StatusID>6</StatusID>
                                 <NotesTextSelection>55,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>0,0</TextSelection>
+                                <TextSelection>66,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem ID="13" Type="Text" Created="2013-01-18 13:36:01 +0100" Modified="2013-03-22 12:05:21 +0100">
+                        <BinderItem ID="13" Type="Text" Created="2013-01-18 13:36:01 +0100" Modified="2013-04-10 17:20:28 +0200">
                             <Title>Experimental Determination of PPIs</Title>
                             <MetaData>
                                 <StatusID>6</StatusID>
                                 <NotesTextSelection>1250,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>361,0</TextSelection>
+                                <TextSelection>1784,0</TextSelection>
                             </TextSettings>
                             <Children>
                                 <BinderItem ID="24" Type="Text" Created="2013-01-24 12:43:35 +0100" Modified="2013-03-22 12:43:10 +0100">
@@ -143,14 +143,14 @@
                                 </BinderItem>
                             </Children>
                         </BinderItem>
-                        <BinderItem ID="15" Type="Text" Created="2013-01-18 13:36:01 +0100" Modified="2013-03-23 11:56:25 +0100">
+                        <BinderItem ID="15" Type="Text" Created="2013-01-18 13:36:01 +0100" Modified="2013-04-10 18:17:24 +0200">
                             <Title>Limitations of experimental methods</Title>
                             <MetaData>
                                 <StatusID>6</StatusID>
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>0,0</TextSelection>
+                                <TextSelection>1754,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem ID="48" Type="Text" Created="2013-02-03 17:24:15 +0100" Modified="2013-03-23 12:04:55 +0100">
@@ -163,24 +163,24 @@
                                 <TextSelection>416,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem ID="35" Type="Text" Created="2013-02-03 17:24:15 +0100" Modified="2013-03-23 18:33:16 +0100">
+                        <BinderItem ID="35" Type="Text" Created="2013-02-03 17:24:15 +0100" Modified="2013-04-10 18:41:48 +0200">
                             <Title>Computational methods</Title>
                             <MetaData>
                                 <StatusID>6</StatusID>
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>762,24</TextSelection>
+                                <TextSelection>1143,0</TextSelection>
                             </TextSettings>
                             <Children>
-                                <BinderItem ID="36" Type="Text" Created="2013-02-03 17:24:15 +0100" Modified="2013-03-23 17:26:48 +0100">
+                                <BinderItem ID="36" Type="Text" Created="2013-02-03 17:24:15 +0100" Modified="2013-04-10 18:58:59 +0200">
                                     <Title>Gene fusion events</Title>
                                     <MetaData>
                                         <StatusID>6</StatusID>
                                         <NotesTextSelection>453,130</NotesTextSelection>
                                     </MetaData>
                                     <TextSettings>
-                                        <TextSelection>0,0</TextSelection>
+                                        <TextSelection>1450,0</TextSelection>
                                     </TextSettings>
                                 </BinderItem>
                                 <BinderItem ID="37" Type="Text" Created="2013-02-03 17:24:15 +0100" Modified="2013-03-23 17:46:22 +0100">
@@ -284,7 +284,7 @@
                                 <NotesTextSelection>997,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>1294,0</TextSelection>
+                                <TextSelection>4162,965</TextSelection>
                             </TextSettings>
                         </BinderItem>
                     </Children>
@@ -612,7 +612,7 @@
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>4495,0</TextSelection>
+                                <TextSelection>5808,1033</TextSelection>
                             </TextSettings>
                             <Children>
                                 <BinderItem ID="108" Type="Text" Created="2013-03-19 11:56:33 +0100" Modified="2013-03-24 18:50:54 +0100">
@@ -634,7 +634,7 @@
                                 <NotesTextSelection>0,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>6300,72</TextSelection>
+                                <TextSelection>4401,1973</TextSelection>
                             </TextSettings>
                             <Children>
                                 <BinderItem ID="107" Type="Text" Created="2013-03-17 20:56:53 +0100" Modified="2013-03-24 19:17:53 +0100">
@@ -683,50 +683,65 @@
                         </BinderItem>
                     </Children>
                 </BinderItem>
-                <BinderItem ID="104" Type="Folder" Created="2013-03-15 15:31:27 +0100" Modified="2013-04-03 09:06:03 +0200">
+                <BinderItem ID="104" Type="Folder" Created="2013-03-15 15:31:27 +0100" Modified="2013-04-09 12:17:51 +0200">
                     <Title>Discussion</Title>
                     <MetaData>
+                        <StatusID>1</StatusID>
                         <NotesTextSelection>1,0</NotesTextSelection>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>2610,0</TextSelection>
+                        <TextSelection>0,0</TextSelection>
                     </TextSettings>
                     <Children>
-                        <BinderItem ID="117" Type="Text" Created="2013-04-01 12:58:17 +0200" Modified="2013-04-03 09:34:01 +0200">
+                        <BinderItem ID="117" Type="Text" Created="2013-04-01 12:58:17 +0200" Modified="2013-04-09 12:36:23 +0200">
                             <Title>Mirrortree web server [discmtserver]</Title>
                             <MetaData>
+                                <StatusID>1</StatusID>
                                 <NotesTextSelection>481,469</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>1969,0</TextSelection>
+                                <TextSelection>1349,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem ID="122" Type="Text" Created="2013-04-03 10:40:57 +0200" Modified="2013-04-03 15:11:48 +0200">
+                        <BinderItem ID="122" Type="Text" Created="2013-04-03 10:40:57 +0200" Modified="2013-04-09 19:56:14 +0200">
                             <Title>Global performance of genome-wide predictions [discglobal]</Title>
                             <MetaData>
+                                <StatusID>1</StatusID>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                                 <NotesTextSelection>19,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>2565,855</TextSelection>
+                                <TextSelection>2340,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem ID="118" Type="Text" Created="2013-04-01 12:58:20 +0200" Modified="2013-04-07 12:47:14 +0200">
+                        <BinderItem ID="118" Type="Text" Created="2013-04-01 12:58:20 +0200" Modified="2013-04-08 20:49:55 +0200">
                             <Title>Incorporating information on predicted solvent accessibility [discaccessibility]</Title>
                             <MetaData>
-                                <NotesTextSelection>200,0</NotesTextSelection>
+                                <StatusID>1</StatusID>
+                                <NotesTextSelection>138,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>1607,0</TextSelection>
+                                <TextSelection>2222,979</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem ID="119" Type="Text" Created="2013-04-01 12:59:15 +0200" Modified="2013-04-03 10:48:36 +0200">
-                            <Title>Selection of organisms [discselection]</Title>
+                        <BinderItem ID="123" Type="Text" Created="2013-04-08 13:37:25 +0200" Modified="2013-04-09 20:00:04 +0200">
+                            <Title>Co-evolution *vs* Co-adaptation [disccovsco]</Title>
                             <MetaData>
-                                <NotesTextSelection>4902,420</NotesTextSelection>
+                                <StatusID>1</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <NotesTextSelection>968,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>0,0</TextSelection>
+                                <TextSelection>1083,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem ID="119" Type="Text" Created="2013-04-01 12:59:15 +0200" Modified="2013-04-10 13:12:55 +0200">
+                            <Title>Selection of organisms [discselection]</Title>
+                            <MetaData>
+                                <NotesTextSelection>295,0</NotesTextSelection>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>1397,1940</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem ID="120" Type="Text" Created="2013-04-01 13:00:38 +0200" Modified="2013-04-04 15:45:28 +0200">
@@ -738,11 +753,11 @@
                                 <TextSelection>0,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem ID="121" Type="Text" Created="2013-04-02 18:33:41 +0200" Modified="2013-04-02 18:35:35 +0200">
+                        <BinderItem ID="121" Type="Text" Created="2013-04-02 18:33:41 +0200" Modified="2013-04-10 12:14:34 +0200">
                             <Title>Future Developments and Perspectives</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
-                                <NotesTextSelection>0,0</NotesTextSelection>
+                                <NotesTextSelection>1717,0</NotesTextSelection>
                             </MetaData>
                             <TextSettings>
                                 <TextSelection>0,0</TextSelection>
@@ -833,7 +848,7 @@
         </Collection>
         <Collection Type="RecentSearch" ID="42C529FA-9C99-4588-9E0D-7235029C65A5" Color="0.922 0.91 0.98">
             <Title>Search Results</Title>
-            <SearchSettings Operator="Exact" Type="All" CaseSensitive="No">s</SearchSettings>
+            <SearchSettings Operator="Exact" Type="All" CaseSensitive="No">t</SearchSettings>
         </Collection>
     </Collections>
     <LabelSettings>
@@ -869,7 +884,7 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2013-01-02 19:30:50 +0100" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" ResetType="Midnight" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="0" Characters="0" Date="2013-04-07 12:45:33 +0200"></PreviousSession>
+        <PreviousSession Words="0" Characters="0" Date="2013-04-10 11:20:16 +0200"></PreviousSession>
     </ProjectTargets>
-    <PrintSettings PaperSize="595.289978,841.890015" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
+    <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
 </ScrivenerProject>
