@@ -1,36 +1,24 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;\f2\ftech\fcharset77 Symbol;
-\f3\fnil\fcharset0 LucidaGrande;}
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Cochin;\f2\fnil\fcharset0 LucidaGrande;
+}
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\fs24 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\fi360\sl288\slmult1\pardirnatural
+
+\f1\fs28 \cf0 *Generales*\
+One of the technical limitations is the generation of trustable phylogenetic trees at a genomic scale. The intermediate steps, such as ortholog detection, sequence alignment, distance estimation or tree generation, need to be carefully considered, particularly in complex evolutionary scenarios such as HGT events[#Pazos:2005hl]. Future implementations with a reasonable tradeoff of computing time and accuracy might help build more reliable evolutionary models. Another unresolved problem is the measurement of the phylogenetic tree similarity. As the tree comparison requires unambiguous mapping of proteins at a species level, the \'93correct\'94 protein orthologs need to be identified. This task can be especially hard in eukaryotes in which the large number of paralogs and multi-domain proteins complicate the correct assignment[#Tillier:2009ff]. On the other hand, the correlation of protein distances calculated either from the MSAs[#Pazos:2001rm] or from the phylogenetic trees[#Pazos:2005hl] has proven particularly useful as a similarity metric. Nevertheless, some studies suggest that most complex schemas involving multidimensional spaces are needed in order to consider the multiple dependencies of protein distances[#Choi:2009gu].\
 \
+Another clear limitation to progress in this field is the need to correctly benchmark the predictive methods. The lack of adequate gold standards for positive and negative interactions conditions [the evaluation of the methods](#assessingpredictiveaccuracy) especially for large-scale predictions.  Blind tests with hidden gold standards would be the best way to accurately compare methods.\
 \pard\pardeftab720\sa240
 
-\f1\fs26 \cf0 This thesis focuses on analyzing mutations in the human kinome, a subset of the genome chosen due to its key role in cancer and the large amount of information available on its biochemical properties. We aimed to specifically shed light on two related aspects of these mutations.
-\fs24 \
+\f2\fs24 \cf0 \
+*Sobre selecci\'f3n de organismos*\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\fi360\sl288\slmult1\pardirnatural
 
-\fs26 First, we wanted to characterize the mutations that disrupt the structure and function of protein kinases, focusing on the properties that contribute to di
-\f2 \uc0\u8629 
-\f1 erentiate pathogenic and non-pathogenic mutations. These features include the solvent accessibility, sequence and structure conservation, and the relevance of the residues for enzymatic activity or family sub-specificity.
-\fs24 \
-
-\fs26 Second, we aimed to apply the knowledge acquired to predict the consequences of mu- tations for human disease, and cancer in particular, using the properties associated with the mutations and the corresponding phenotypes as the input.
-\fs24 \
-
-\fs26 We approached these scientific questions from the perspective of Computational Biology. This discipline provides us with the methodology to identify mutations and their properties, link them to annotations from heterogeneous information sources, classify the mutations based on the features selected and according to the information available, and use this classification to predict the e
-\f2 \uc0\u8629 
-\f1 ects of newly discovered mutations.
-\fs24 \
+\f1\fs28 \cf0 Thus, the selection of an optimal set of organisms may be critical for two reasons. On one hand, the reference set may act as a proxy for the interaction age: whereas ancient interactions would require complete trees, the more recent interactions may be detected with a small set of close organisms. On the other hand, the importance of the reference set is becoming mandatory as the number of fully sequenced genomes grow. With several thousands of genomes available, heuristic approaches may help improve the performance, avoiding a waste of computational time.
+\f2\fs24 \
 \pard\pardeftab720\sa240
-
-\f3 \cf0 \
-\pard\pardeftab720\sa240
-
-\fs38 \cf0 \
-\pard\pardeftab720\sa240
-
-\fs24 \cf0 \
-\
+\cf0 \
 }
