@@ -3,7 +3,6 @@
    \onehalfspacing
   \btypeout{Abstract Page}
   \thispagestyle{empty}
-  \null\vfil
   \begin{center}
     \setlength{\parskip}{0pt}
     {\normalsize \UNIVNAME \par}
@@ -13,8 +12,6 @@
     {\normalsize \facname \par}
     {\normalsize \deptname \par}
     \bigskip
-    {\normalsize Doctor of Philosophy\par}
-    \bigskip
     {\normalsize\bf \mytitle \par}
     \medskip
     {\normalsize by \authornames \par}
@@ -23,15 +20,16 @@
 }
 
 % The Abstract Page
-% \addtotoc{Abstract}  % Add the "Abstract" page entry to the Contents
+\addtotoc{Abstract}  % Add the "Abstract" page entry to the Contents
 \abstract{
 % \addtocontents{toc}{\vspace{1em}}  % Add a gap in the Contents, for aesthetics
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.
 
-Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula. Nunc molestie, nisl sit amet cursus convallis, sapien lectus pretium metus, vitae pretium enim wisi id lectus. Donec vestibulum. Etiam vel nibh. Nulla facilisi. Mauris pharetra. Donec augue. Fusce ultrices, neque id dignissim ultrices, tellus mauris dictum elit, vel lacinia enim metus eu nunc.
+The study of protein-protein interactions and how these interactions determine the function and behavior of the living systems is nowadays one of the fundamental questions of Systems Biology. The emergence of a number of experimental techniques providing protein interaction data at a genome scale have boosted the study of biological problems, not just as the sum of the parts but considering the complete network of interactions. Nevertheless, these experimental procedures usually suffer from technical problems, producing poor coverages or large numbers of false positives. 
 
-}
+As an alternative to the experimental methods, a set of computational approaches have tried to take advantage of the different evolutive landmarks that interacting proteins print on their genomes. For instance, evidence suggests that functionally related and potentially interacting proteins tend to evolve in a coordinated way, thereby presenting similar phylogenetic trees. A particularly successful family of methods, known as \emph{mirrortree}, has emerged to quantify this co-evolution at a sequence level as a sign of interaction at a molecular level. Over the last decade, this family of techniques has demonstrated its ability to perform genome-wide protein interaction predictions, even reaching accuracies similar to their experimental counterparts. However, a number of problems affecting protein interaction prediction have appeared, either derived from technical issues or inherited from the incomplete understanding of the underlying evolutionary process. Over the coming years, these problems may have a dramatic impact on the global performance of the methods.
 
-\clearpage  % Abstract ended, start a new page
+The main proposal of this thesis is to diagnose the aforementioned problems limiting the full implementation of co-evolution-based prediction of protein interactions, in order to offer possible solutions, potential applications and foreseeable developments. During the last years, the \emph{mirrortree}-based family of techniques has largely been used to predict protein interactions mostly in genome-wide computational experiments. Nevertheless, the co-evolution-based prediction has also shown adequate when single pairs of proteins need to be evaluated. As a consequence, we present the Mirrortree Server, which allows users with any level of expertise to graphically and interactively study the co-evolution of two protein families in a taxonomic context. Alternatively, more difficulties arise when the co-evolution analysis is performed for large sets of potentially interacting proteins. Since little is known about the latent evolutionary signal, whether the tree similarity is due to compensatory changes or to similarities in the evolutionary rate, is a pivotal question that will condition future research on this issue. We evaluate the true extent of previous discussions in this regard by incorporating predicted solvent accessibility to \emph{mirrortree}-based predictions. Other problems arise as a consequence of the growing number of sequenced organisms available. In that sense, we show that the performance of \emph{mirrortree}-based methodologies depends on the set of organisms used to build the trees and how the selection of certain subsets of organisms seems to be more suitable for the prediction of certain types of interactions. Finally, considering all the aforementioned analysis, we propose a new \emph{mirrortree}-based method denominated \emph{p-mirrortree} which calculates the statistical significance of a given similarity based on a null distribution of random co-evolution. Moreover, important information on the structure, function, and evolution of macromolecular complexes can be inferred with this methodology.
+
+\cleardoublepage  % Abstract ended, start a new page
 %% ----------------------------------------------------------------

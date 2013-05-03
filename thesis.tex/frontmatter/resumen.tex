@@ -1,0 +1,35 @@
+\newenvironment{resumen}
+{
+   \onehalfspacing
+  \btypeout{Resumen}
+  \thispagestyle{empty}
+  \begin{center}
+    \setlength{\parskip}{0pt}
+    {\normalsize \UNIVNAME \par}
+    \bigskip
+    {\huge{\textit{Resumen}} \par}
+    \bigskip
+    {\normalsize \facname \par}
+    {\normalsize \deptname \par}
+    \bigskip
+    {\normalsize\bf \mytitle \par}
+    \medskip
+    {\normalsize por \authornames \par}
+    \bigskip
+  \end{center}
+}
+
+% The Abstract Page
+\addtotoc{Resumen}  % Add the "Abstract" page entry to the Contents
+\resumen{
+% \addtocontents{toc}{\vspace{1em}}  % Add a gap in the Contents, for aesthetics
+
+El estudio de las interacciones proteína-proteína y de cómo dichas interacciones determinan la función y el comportamiento de los sistemas vivos es hoy en día una de las preguntas fundamentales de la Biología de Sistemas. La aparición de una serie de técnicas experimentales capaces de identificar interacciones a escala genómica, ha impulsado el estudio de los problemas biológicos, no sólo como la suma de las partes, sino considerando la red completa de interacciones. Sin embargo, estos métodos experimentales a menudo adolecen de una serie de problemas técnicos que derivan en bajos rendimientos y alto número de falsos positivos.
+
+Un conjunto de métodos computacionales han surgido como alternativa a los técnicas experimentales con el objetivo de predecir interacciones basándose en los distintos tipos de marcas evolutivas que las proteínas que interaccionan dejan en el genoma. En este sentido, ciertas evidencias sugieren que proteínas funcionalmente relacionadas que potencialmente podrían interaccionar tienden a evolucionar de una forma coordinada y por tanto poseen árboles filogenéticos similares. Una familia de métodos conocida como \emph{mirrortree} ha surgido con el objetivo de cuantificar la coevolución a nivel de secuencia como un síntoma de interacción a nivel molecular. A lo largo de la última década, esta familia de técnicas ha demostrado predecir interacciones entre proteínas con una precisión similar a las técnicas experimentales. A pesar de ello, han surgido una serie de problemas relacionados, bien con inconvenientes de tipo técnico, o bien debidos al desconocimiento de los procesos evolutivos subyacentes. Durante los próximos años, estos problemas pueden tener un impacto dramático en el uso de estos métodos de predicción.
+
+El principal objetivo de esta tesis es del diagnóstico de los problemas que dificultan la completa implantación de  los métodos basados en coevolución con el objetivo de ofrecer posibles soluciones, potenciales aplicaciones y  mejoras futuras. A lo largo de los últimos años, esta familia de técnicas se ha usado mayoritariamente para predecir interacciones entre proteínas en organismos completos. Sin embargo, la predicción basada en coevolución ha resultado ser útil también para predecir interacciones entre pares de proteínas aisladas. Por ello, presentamos MirrorTree Server, un servidor que permite a usuarios con distintos niveles de experiencia estudiar de manera interactiva la coevolución de un par de familias de proteínas en un contexto taxonómico. Sin embargo, cuando aplicamos los mismos conceptos a la predicción de interacciones para un organismo completo aparecen una serie de problemas que es necesario abordar. Puesto que se conoce poco acerca de la señal evolutiva responsable de dicha similitud, se ha postulado que por un lado puede deberse bien a cambios compensatorios a nivel de secuencia, o bien a cambios concertados debido a una similitud en la tasa evolutiva de las proteínas. Con el objetivo de aclarar este dilema y de mejorar la predicción de interacciones, hemos estudiado el efecto de incorporar información de accessibilidad predicha en la predicción de interacciones basada en \emph{mirrortree}. Por otro lado, otros problemas surgen como consecuencia del número creciente de organismos secuenciados. En este sentido, hemos querido explorar la precisión de las tecnologías basadas en \emph{mirrortree} en función del conjunto de organismos que se utiliza para construir los árboles filogenéticos y cómo ciertos subconjuntos pueden ser más adecuados para determinados tipos de interacciones. Finalmente, teniendo en cuenta todos los problemas aquí descritos, proponemos un nuevo método basado en \emph{mirrortree} denominado \emph{p-mirrortree} que calcula la significancia estadística de un determinado valor de similitud basado en una distribución nula de coevoluciones aleatorias. Además, información relevante sobre la estructura, función y evolución de los complejos macromoleculares puede ser extraída de la aplicación de esta metodología. 
+}
+
+\cleardoublepage  % Abstract ended, start a new page
+%% ----------------------------------------------------------------

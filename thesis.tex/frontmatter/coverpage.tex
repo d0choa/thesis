@@ -39,7 +39,7 @@
 \newcommand*{\FACULTY}[1]{\def\FACNAME{#1}}
 \newcommand*{\subject}[1]{\def\subjectname{#1}}
 % \newcommand*{\keywords}[1]{\def\keywordnames{#1}}
-\supervisor  {}
+\supervisor  {Dr. Florencio Pazos}
 \examiner    {}
 \degree      {}
 \authors     {}
@@ -75,7 +75,7 @@
 
 \title  {\mytitle}
 \authors  {\texorpdfstring
-            {\href{your web site or email address}{\myauthor}}
+            {\href{dogcaesar@gmail.com}{\myauthor}}
             {\myauthor}
             }
 \addresses  {\groupname\\\deptname\\\univname}  % Do not change this here, instead these must be set in the "Thesis.cls" file, please look through it instead
@@ -105,9 +105,18 @@
       \vfill
       {\huge \bf \mytitle \par}
       \vfill
-      {\LARGE by \par}
-      \smallskip
-      {\LARGE \authornames \par}
+	  \begin{minipage}{0.5\textwidth}
+	  \begin{flushleft} \large
+	  \emph{Author:}\\
+	  {\large\href{dogcaesar@gmail.com}{\authornames}} % Author name - remove the \href bracket to remove the link
+	  \end{flushleft}
+	  \end{minipage}
+	  \begin{minipage}{0.3\textwidth}
+	  \begin{flushright} \large
+	  \emph{Supervisor:} \\
+	  \href{pazos@cnb.csic.es}{\supname} % Supervisor name - remove the \href bracket to remove the link  
+	  \end{flushright}
+	  \end{minipage}\\[3cm]
       \vfill
       {\large A thesis submitted in partial fulfillment for the \par}
       {\large degree of Doctor of Philosophy \par}
@@ -119,7 +128,7 @@
       \bigskip
       \bigskip
       \bigskip
-      {\Large \today \par}
+      {\Large Madrid, \today \par}
       \bigskip
     \end{center}
     \par
